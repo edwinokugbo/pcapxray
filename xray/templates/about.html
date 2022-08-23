@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="content-container">
+    <div class="header-container">
+        <img src={% static 'img/us.jpg' %} alt="hands with mobile device">
+        <h1>About Us</h1>
+        <div class="header-overlay"></div>
+    </div>
+    <div class="content">
+        <h3>Background</h3>
+        <p>The idea for the establishment of the FOSSFA first appeared during the ICT
+        Policy and Civil Society Workshop held in Adis Ababa, Ethiopia on November 6-8,
+        2002, which was in preparation for the 2003 World Summit on the Information
+        Society (WSIS) in Geneva. During the workshop, the participants realized the
+        need for open source solutions in Africa. An Open Source Task Force for Africa
+        (OSTA) was subsequently created to bring together entities engages in open
+        source all over the African region. On February 2003, the organization was
+        created during the preparatory committee meeting of the WSIS</p>
+
+        <h3>Vision and Mission</h3>
+        <p>The organization's vision is to promote the use of free and open source
+        (FOSS) and the FOSS model as part of African development. It also aims to become
+        the voice for promoting creativity, expertise, initiatives for free open source
+        solution, and the empowerment of women within the African continent.</p>
+        <br>
+        <h3>Objectives</h3>
+        <h4>The foundation aims to achieve the following objectives:</h4>
+        <p>
+            <ul>
+                <li>
+                    To serve as an advocate for the use and implementation of open
+                    source solutions from the local, regional, and national levels.
+                </li>
+                <li>
+                    To encourage donations from governments that support open source
+                    such as Germany, Sweden, Norway and France.
+                </li>
+                <li>To create a Clearinghouse of Knowledge Factory</li>
+                <li>
+                    To implement minimum standards, guidelines and advisory parameters
+                    that will be used by the organization.
+                </li>
+                <li>
+                    To develop a localized capacity to work on software development in
+                    Africa.
+                </li>
+                <li>
+                    To ensure that a discussion regarding open source will be included
+                    during the National Information and Communication Infrastructure
+                    (NICI) policy processes.
+                </li>
+            </ul>
+        </p>
+    </div>
+</div>
+{% endblock %}

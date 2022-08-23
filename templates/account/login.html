@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <div class="background-2">
+            <form id="login" action="/pages/login/" method="POST">
+                {% csrf_token %}
+                <div class="logo"></div>
+                <div class="wgt-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="wgt" name="username" placeholder="username">
+                </div>
+                <div class="wgt-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="wgt" name="password" placeholder="Password">
+                </div>
+                <div class="w-full flex justify-between items-center py-2">
+                    <div class="flex items-center justify-center">
+                        <label class="flex items-center">
+                            <input class="mt-0 mr-1" type="checkbox"></input>
+                            <span>Remember Me</span>
+                        </label>
+                    </div>
+                    <div class="">
+                        <a class="text-sm text-[#58507b] font-bold" href="/accounts/signup">Sign Up</a>
+                    </div>
+                </div>
+                <button class="btn-accent" type="submit">Sign in</button>
+                {% for message in messages %}
+                    <div class="alert alert-danger alert-dismissible fade show small">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {{message}}
+                    </div>
+                {% endfor %}
+            </form>
+        <div>
+{% endblock %}

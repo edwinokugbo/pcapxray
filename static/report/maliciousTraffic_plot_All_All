@@ -1,0 +1,506 @@
+digraph "network_diagram - All" {
+	graph [bgcolor=grey dpi=300 fontcolor=black fontsize=16 label=PcapGraph overlap=scale rankdir=LR size="10, 10"]
+	node [color=" black" fillcolor=yellow fixedsize=true fontcolor=black fontname=Helvetica height=3 shape=circle style=filled width=3]
+	node [shape=doublecircle]
+	node [shape=circle]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63225: 2607.f8b0.400d.c0a..63" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63236: 216.165.2.56" color=brown]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63236: 216.165.2.56" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63236: 216.165.2.56" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63236: 216.165.2.56" color=brown]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63236: 216.165.2.56" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63240: 216.165.2.56" color=brown]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63240: 216.165.2.56" color=brown]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63236: 216.165.2.56" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63236: 216.165.2.56" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63240: 216.165.2.56" color=brown]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"216.165.2.56
+54.13.79.f3.66.d2"
+	"216.165.2.56
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.6: " color=blue]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"192.168.0.1
+54.13.79.f3.66.d2"
+	"192.168.0.1
+54.13.79.f3.66.d2" -> "01.00.5e.00.00.01
+PossibleGateway" [label="UnknownProtocol/NA: 224.0.0.1" color=brown]
+	"192.168.0.1
+54.13.79.f3.66.d2"
+	"192.168.0.1
+54.13.79.f3.66.d2" -> "01.00.5e.00.00.01
+PossibleGateway" [label="UnknownProtocol/NA: 224.0.0.1" color=brown]
+	"fe80..5613.79ff.fef3.66d2
+54.13.79.f3.66.d2"
+	"fe80..5613.79ff.fef3.66d2
+54.13.79.f3.66.d2" -> "33.33.00.00.00.01
+PossibleGateway" [label="UnknownProtocol/NA: ff02..1" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"192.168.0.3
+a0.cc.2b.98.e1.7b"
+	"192.168.0.3
+a0.cc.2b.98.e1.7b" -> "01.00.5e.7f.ff.fa
+PossibleGateway" [label="UnknownProtocol/NA: 239.255.255.250" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"192.168.0.3
+a0.cc.2b.98.e1.7b"
+	"192.168.0.3
+a0.cc.2b.98.e1.7b" -> "01.00.5e.00.00.fb
+PossibleGateway" [label="UnknownProtocol/NA: 224.0.0.251" color=brown]
+	"fe80..a2cc.2bff.fe98.e17b
+a0.cc.2b.98.e1.7b"
+	"fe80..a2cc.2bff.fe98.e17b
+a0.cc.2b.98.e1.7b" -> "33.33.00.00.00.16
+PossibleGateway" [label="UnknownProtocol/NA: ff02..16" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.4006.819..200e" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.4006.819..200e" color=brown]
+	"192.168.0.17
+cc.af.78.67.20.e1"
+	"192.168.0.17
+cc.af.78.67.20.e1" -> "01.00.5e.00.00.fc
+PossibleGateway" [label="UnknownProtocol/NA: 224.0.0.252" color=brown]
+	"fe80..f0d3.965.9b98.362e
+cc.af.78.67.20.e1"
+	"fe80..f0d3.965.9b98.362e
+cc.af.78.67.20.e1" -> "33.33.00.00.00.16
+PossibleGateway" [label="UnknownProtocol/NA: ff02..16" color=brown]
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"192.168.0.8
+00.db.df.d2.f2.53"
+	"192.168.0.8
+00.db.df.d2.f2.53" -> "01.00.5e.00.00.fb
+PossibleGateway" [label="UnknownProtocol/NA: 224.0.0.251" color=brown]
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.4006.819..200e" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.4006.819..200e" color=brown]
+	"192.168.0.5
+1c.1e.e3.9f.21.25"
+	"192.168.0.5
+1c.1e.e3.9f.21.25" -> "01.00.5e.00.00.16
+PossibleGateway" [label="UnknownProtocol/NA: 224.0.0.22" color=brown]
+	"fe80..f0d3.965.9b98.362e
+cc.af.78.67.20.e1"
+	"fe80..f0d3.965.9b98.362e
+cc.af.78.67.20.e1" -> "33.33.00.00.00.16
+PossibleGateway" [label="UnknownProtocol/NA: ff02..16" color=brown]
+	"fe80..25dd.56f9.7a84.c284
+00.db.df.d2.f2.53"
+	"fe80..25dd.56f9.7a84.c284
+00.db.df.d2.f2.53" -> "33.33.00.00.00.16
+PossibleGateway" [label="UnknownProtocol/NA: ff02..16" color=brown]
+	"fe80..5613.79ff.fef3.66d2
+54.13.79.f3.66.d2"
+	"fe80..5613.79ff.fef3.66d2
+54.13.79.f3.66.d2" -> "33.33.00.00.00.01
+PossibleGateway" [label="UnknownProtocol/NA: ff02..1" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/63225: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 2607.f8b0.400d.c0a..63" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c0a..63
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+}

@@ -1,0 +1,506 @@
+digraph "network_diagram - All" {
+	graph [bgcolor=grey dpi=300 fontcolor=black fontsize=16 label=PcapGraph overlap=scale rankdir=LR size="10, 10"]
+	node [color=" black" fillcolor=yellow fixedsize=true fontcolor=black fontname=Helvetica height=3 shape=circle style=filled width=3]
+	node [shape=doublecircle]
+	node [shape=circle]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64788: 104.20.31.2" color=brown]
+	"104.20.31.2
+54.13.79.f3.66.d2"
+	"104.20.31.2
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64750: 54.230.51.182" color=brown]
+	"54.230.51.182
+54.13.79.f3.66.d2"
+	"54.230.51.182
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64789: 172.217.12.163" color=brown]
+	"172.217.12.163
+54.13.79.f3.66.d2"
+	"172.217.12.163
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"104.20.31.2
+54.13.79.f3.66.d2"
+	"104.20.31.2
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64788: 104.20.31.2" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64794: 72.21.81.48" color=brown]
+	"72.21.81.48
+54.13.79.f3.66.d2"
+	"72.21.81.48
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64804: 172.217.10.142" color=brown]
+	"172.217.10.142
+54.13.79.f3.66.d2"
+	"172.217.10.142
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64820: 52.4.44.43" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64805: 151.101.20.249" color=brown]
+	"151.101.20.249
+54.13.79.f3.66.d2"
+	"151.101.20.249
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64782: 23.52.167.9" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64736: 23.52.167.9" color=brown]
+	"23.52.167.9
+54.13.79.f3.66.d2"
+	"23.52.167.9
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"23.52.167.9
+54.13.79.f3.66.d2"
+	"23.52.167.9
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64780: 23.52.167.9" color=brown]
+	"23.52.167.9
+54.13.79.f3.66.d2"
+	"23.52.167.9
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64813: 52.85.95.152" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64812: 52.85.95.152" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/NA: 209.18.47.61" color=brown]
+	"209.18.47.61
+54.13.79.f3.66.d2"
+	"209.18.47.61
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/NA: 192.168.0.26" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64789: 172.217.12.163" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64789: 172.217.12.163" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64789: 172.217.12.163" color=brown]
+	"172.217.12.163
+54.13.79.f3.66.d2"
+	"172.217.12.163
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"172.217.12.163
+54.13.79.f3.66.d2"
+	"172.217.12.163
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64789: 172.217.12.163" color=brown]
+	"172.217.12.163
+54.13.79.f3.66.d2"
+	"172.217.12.163
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"172.217.12.163
+54.13.79.f3.66.d2"
+	"172.217.12.163
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64749: 69.147.82.60" color=brown]
+	"69.147.82.60
+54.13.79.f3.66.d2"
+	"69.147.82.60
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64816: 151.101.22.2" color=brown]
+	"151.101.22.2
+54.13.79.f3.66.d2"
+	"151.101.22.2
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64803: 172.217.10.131" color=brown]
+	"172.217.10.131
+54.13.79.f3.66.d2"
+	"172.217.10.131
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64707: 172.217.12.174" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64707: 172.217.12.174" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64707: 172.217.12.174" color=brown]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64707: 172.217.12.174" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64817: 172.217.10.131" color=brown]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64707: 172.217.12.174" color=brown]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64707: 172.217.12.174" color=brown]
+	"172.217.10.131
+54.13.79.f3.66.d2"
+	"172.217.10.131
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTP: 192.168.0.26: " color=green]
+	"172.217.12.174
+54.13.79.f3.66.d2"
+	"172.217.12.174
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64687: 216.58.218.238" color=brown]
+	"216.58.218.238
+54.13.79.f3.66.d2"
+	"216.58.218.238
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64706: 173.194.68.104" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64688: 216.58.218.238" color=brown]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"216.58.218.238
+54.13.79.f3.66.d2"
+	"216.58.218.238
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"173.194.68.104
+54.13.79.f3.66.d2"
+	"173.194.68.104
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="HTTPS: 192.168.0.26: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64832: 54.86.254.88" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64862: 151.101.22.110" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64863: 151.101.22.110" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64864: 151.101.22.110" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64858: 151.101.20.84" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64857: 151.101.20.84" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64831: 34.198.48.183" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64788: 104.20.31.2" color=brown]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/64820: 52.4.44.43" color=brown]
+}

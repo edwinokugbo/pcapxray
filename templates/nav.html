@@ -1,0 +1,48 @@
+{% load static %}
+
+<nav>
+  <div class="org">
+    <a id="nav-logo" href="/">
+      <img alt="logo" src={% static 'img/logo.png' %}>
+      <h2>FOSSFA.Africa</h2>
+    </a>
+    <button id="hamburger"></button>
+  </div>
+  <div id="nav-menu">
+    <ul class="nav">
+      <li>
+        <a href="/about" class="nav-item">About</a>
+      </li>
+      <li>
+        <a href="/blog" class="nav-item">Blog</a>
+      </li>
+      <li>
+        <a href="/polls" class="nav-item">Polls</a>
+      </li>
+      <li>
+        <a href="/contact" class="nav-item">Contact</a>
+      </li>
+      {% if request.user.is_authenticated %}
+      <li>
+        <div id="nav-drop-menu-container">
+          <button id="dropbtn">
+            My Account
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="nav-drop-menu">
+            <a href="/home">Dashboard</a>
+            <a href="#">My profile</a>
+            <a href="/pages/logout">Logout <i class="fa fa-sign-out"></i></a>
+          </div>
+        </div>
+      </li>
+      {% else %}
+      <li>
+        <a href="/accounts/login" class="nav-item"
+          >Login <i class="fa fa-sign-in"></i
+        ></a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>

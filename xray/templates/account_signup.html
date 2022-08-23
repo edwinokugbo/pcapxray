@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+{% load account %}
+
+<div class="bg-black h-screen flex justify-center pt-8">
+<div class="w-full mx-4 lg:w-[500px] lg:h-fit lg:mx-auto bg-[rgb(223,212,195)] border-2 border-slate-300 px-8 py-16 rounded-lg shadow-lg">
+<h1>SignUp</h1>
+<div class="">
+    <form action="{% url "account_signup" %}" method="post">
+        {% csrf_token %}
+        <div class="flex flex-col gap-2">
+            {{ form }}
+            <button type="submit">SignUp</button>
+        </div>
+    </form>
+<div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+            port = None
+            protocol = ""
+
+            if packet.haslayer(TCP):
+                protocol = 'TCP'
+                # print('TCP', ii)
+
+            if packet.haslayer(UDP):
+                protocol = 'UDP'
+                # print('UDP', ii)
+
+            if packet.haslayer(ARP):
+                protocol = 'ARP'
+                # print('ARP', ii)
+
+            if packet.haslayer(ICMP):
+                protocol = 'ICMP'
+                # print('ICMP', ii)
+
+            if packet.haslayer(DNS):
+                # protocol = 'DNS'
+                if isinstance(packet.an, DNSRR):
+                    rrname = packet.an.rrname
+
+            # # # We're only interested packets with a DNS Round Robin layer
+            # if packet.haslayer(DNSRR):
+            #     # If the an(swer) is a DNSRR, print the name it replied with.
+            #     if isinstance(packet.an, DNSRR):
+            #         rrname = packet.an
+
+            # if packet.haslayer(Ether):
+            #     port = packet['Ether'].dport
+
+            # Get source, destination, port, etc
+            if packet.haslayer(IP):
+                packetIP = packet['IP']
+                src = packetIP.src
+                dest = packetIP.dst
+
+                try:
+                    port = packetIP.dport
+                except AttributeError:
+                    port = None
+
+
+
+Packet
+fields = src, dst
+display = text output
+time = timestamp
+payload = packet payload
+summary = 54:13:79:f3:66:d2 > 78:4f:43:59:c1:6f (IPv4)
+payload_guess
+packet.__contains__('IP'):
+
+
+<!--    <div for="file" class="ml-4 mr-2">Progress:</div>-->
+<!--    <progress-->
+<!--      id="file"-->
+<!--      value="32"-->
+<!--      max="100"-->
+<!--      class="w-[300px] border-2 border-slate-400 px-1 h-6 text-blue-700 font-bold"-->
+<!--    >-->
+<!--      32%-->
+<!--    </progress>-->

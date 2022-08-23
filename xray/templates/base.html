@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  {% include 'header.html' %} 
+  {% load static %}
+  <body>
+    {% comment %} <header>{% include 'nav.html' %} {% block header %} {% endblock %}</header> {% endcomment %}
+    <main class="min-h-screen bg-slate-100">{% block content %} {% endblock %}</main>
+    {% comment %} <footer>{% include 'footer.html' %}</footer> {% endcomment %}
+  </body>
+  {% load static %}
+  <script src="{% static 'js/main.js' %}" crossorigin="anonymous"></script>
+</html>

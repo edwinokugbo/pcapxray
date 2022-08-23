@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light header">
+  <div class="header__left navbar-nav mr-auto">
+  <a class="navbar-brand" href="/">
+    <img src="https://images.africanfinancials.com/ng-maybak-logo.png" height="50" width="auto">    
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link site-title" href="/">NIBSS Manager <span class="sr-only">(</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/nibss/customers"><i class="fas fa-people-arrows" title="Customers"></i> <span class="sr-only">(</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/nibss/products"><i class="fas fa-cart-plus" title="Products"></i> <span class="sr-only">(</span></a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" href="/nibss/transactions"><i class="fas fa-cash-register" title="Transactions"></i> <span class="sr-only">(</span></a>
+      </li>      
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li> -->
+      {% if request.user.is_staff %}
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="font-size: 18px;color:brown;" title="{{request.user}}"><i class="far fa-user"></i></span></a>
+      </li>
+      {% endif %}
+      <li class="nav-item active">
+        <a class="nav-link" href="#" title="Documentation"><i class="fas fa-book"></i> <span class="sr-only">(</span></a>
+      </li>
+      {% comment %} <li class="nav-item">
+        <a class="nav-link" href="#" title="FAQ"><i class="fa fa-question"></i> <span class="sr-only">(</span></a>
+      </li> {% endcomment %}
+      <li class="nav-item">
+        <a class="nav-link" href="#" title="Contact"><i class="far fa-address-book"></i> <span class="sr-only">(</span></a>
+      </li>
+      {% if request.user.is_staff %}      
+      <li class="nav-item">
+        <a class="nav-link" href="/nibss/logout" title="Logout"><i class="fa fa-sign-out"></i></a>
+      </li>
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="/nibss/login">Login <span class="sr-only">(</span></a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>
+<div class="app">

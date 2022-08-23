@@ -1,0 +1,160 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% load render_table from django_tables2 %}
+{% block content %}
+<div class="w-full h-full bg-slate-0 mb-48" xmlns:xray="http://www.w3.org/1999/xhtml">
+  <div class="w-ful flex justify-between py-2 px-4 bg-[#2C8DE7] text-white">
+    <h3>PcapXray 2.0</h3>
+    <div>
+      <a id="toggle-settings" href="#" title="Show Settings" class="text-lg text-white mr-2"><span class="fa fa-gear"></span></a>
+      <a href="/" class="text-lg text-white" title="Back to start"><span class="fa fa-home"></span></a>
+    </div>
+  </div>
+  <div
+    class="w-full h-fit py-4 pl-8 pr-4 bg-slate-100 border-2 border-slate-300 flex flex-col lg:flex-row justify-start items-start lg:items-center shadow-2xl"
+  >
+    <div class="mr-4">Select pcap file:</div>
+    <form
+      method="post"
+      enctype="multipart/form-data"
+      action="{% url 'xray:browse_pcap'  %}"
+    >
+      <div class="flex items-center">
+        <select name="selected_pcap" value="{{ selected_pcap }}">
+          {% for pcap in pcaps %}
+          <option value="{{ pcap }}" {% if pcap == selected_pcap %}selected{% endif %}>{{ pcap }}</option>
+          {% endfor %}
+        </select>
+        <button
+          id="pcap-browse-butt"
+          class="bg-[#2C8DE7] text-white border-2 border-slate-100] px-4 h-[45px] mt-[-2px] mr-4 rounded-sm"
+        >
+          Analyse
+        </button>
+        <div class="flex items-center">
+          <input type="checkbox" name="recreate_table"  /> <label class="ml-2">Reload from file</label>
+        </div>
+      </div>
+    </form>
+      <div
+        class="flex-1 flex justify-start lg:justify-end items-start lg:items-center mt-4"
+      >
+        <span
+        id="hosts-table-butt"
+        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+      title="Hosts"
+      >
+        <img src="{% static '/fontawesome/svgs/solid/cubes.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+      </span>
+      <span
+      id="packets-table-butt"
+        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+      title="Packets"
+      >
+        <img src="{% static '/fontawesome/svgs/solid/network-wired.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+      </span>
+      <span
+      id="packets-interactive-butt"
+        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+      title="Interactiv eMagic"
+      >
+        <img src="{% static '/fontawesome/svgs/solid/chart-gantt.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+      </span>
+      <span
+      id="packets-map-butt"
+        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+      title="Visualize"
+      >
+        <img src="{% static '/fontawesome/svgs/solid/eye.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+      </span>
+        <span
+          class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+          title="Zoom In"
+        >
+          <img src="{% static '/fontawesome/svgs/solid/magnifying-glass-plus.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+        </span>
+        <span
+          class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+          title="Zoom Out"
+        >
+          <img src="{% static '/fontawesome/svgs/solid/magnifying-glass-minus.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+        </span>
+      </div>
+  </div>
+  <div id="settings-box" style="display:none;" class="w-full">
+    <div class="none w-full h-fit py-4 pl-8 pxr-4 bg-slate-100 border-2 border-slate-200 flex flex-col1 md:flex-row justify-start md:justify-between items-start md:items-center"
+    >
+      <div
+        class="flex-1 flex flex-col lg:flex-row justify-start lg:justify-start items-start lg:items-center"
+      >
+        <div class="mr-4 w-fit">Output directory path:</div>
+        <input type="text" class="w-[250px] h-[30px] mr-4" />
+        <input type="file" class="w-fit mr-4" />
+      </div>
+    </div>
+  </div>
+  <div
+    class="w-full h-fit py-4 pl-8 pr-4 bg-slate-100 border-2 border-slate-100 flex flex-col md:flex-row justify-start md:justify-between items-start lg:items-center"
+  >
+    <div
+      class="flex flex-col md:flex-row justify-start lg:justify-between items-start lg:items-center"
+    >
+      <div class="flex flex-col justify-start items-start">
+        <div class="mr-2">Options:</div>
+        <select class="h-[40px] min-w-[150px] mr-4">
+          <option>None</option>
+        </select>
+      </div>
+      <div class="flex flex-col justify-start items-start">
+        <div class="mr-2">Source</div>
+        <select class="h-[40px] min-w-[150px] mr-4">
+          {% for source in sources %}
+            {% if source != "" %}
+              <option value="{{ source }}">{{  source }}</option>
+            {% endif %}          
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="flex flex-col justify-start items-start">
+        <div class="mr-2">Destination</div>
+        <select class="h-[40px] min-w-[150px]">
+          {% for dest in dests %}
+            {% if dest != "" %}
+              <option value="{{ dest }}">{{  dest }}</option>
+            {% endif %}          
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="w-full px-8 mt-4 pt-4 border-t-2">
+    <div id="packets-table" class="w-full flex flex-col lg:flex-row justify-between gap-5">
+      <div class="w-full bg-white p-4 shadow-md overflow-x-auto">
+        <h2>Packets</h2>
+        {% if table %}
+            {% include 'my_packets.html' %}
+        {% endif %}
+      </div>
+    </div>
+    <div id="hosts-table" class="w-full flex flex-col lg:flex-row justify-between gap-5" style="display:none;">
+      <div class="w-full bg-white p-4 shadow-md overflow-x-auto">
+        <h2>Hosts</h2>
+        {% if table_hosts %}
+          {% include 'my_hosts.html' %}
+        {% endif %}
+      </div>
+    </div>
+    <div id="packets-map" style="display:none;">
+      <h2>Packets Map</h2>
+      <img id="packets-img" style="width:100%;height:auto;" src="{% static map_url %}" />
+    </div>
+    <div id="packets-interactive" style="display:none;" class="w-[70%] p-4">
+      <h2>Interactive Map</h2>
+      {% if map_html is not None  %}
+        {% include map_html %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
