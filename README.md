@@ -25,9 +25,9 @@ Tool Highlights:
   * Device Details
   
 ### Tool Image:
-![Alt text](https://srinivas11789.github.io/PcapXray/Samples/screen2_6_1.png?raw=true)
+![Alt text](?raw=true)
 
-![Alt text](https://srinivas11789.github.io/PcapXray/Samples/screen2_6_2.png?raw=true)
+![Alt text](?raw=true)
 
 ### Components:
 * Network Diagram 
@@ -42,35 +42,21 @@ Tool Highlights:
 
 ```bash
 apt install python3-pip
-apt install python3-tk
-apt install graphviz
-apt install python3-pil python3-pil.imagetk
+Create a virtual environment with venv
+    apt-get install python3-venv
+    mkdir pcapenv
+    python3 -m venv pcapenv
+    source pcapenv/bin/activate         
 pip3 install -r requirements.txt
-python3 Source/main.py
+python3 manage.py runserver --no-reload
 ```
-( Make sure to escalate privilege to allow file creations - Run with `sudo` )
+The above commands have also been saved in an executable file name pc in the project root directory.
 
-For MAC:
-```
-brew install graphviz
-```
+( You may escalate your user privilege to allow file creations if your system requires it - Run with `sudo` )
 
-* Python 2
-
-```bash
-apt install python-tk
-apt install graphviz
-pip install -r requirements.txt
-python Source/main.py
-```
 ( Make sure to escalate privilege to allow file creations - Run with `sudo` )
 
 ### Python Libraries Used:  - All these libraries are required for functionality
-* Tkinter and TTK – Install from pip or apt-get – Ensure Tkinter and graphviz is installed (Most Linux contain by default) 
-  * apt install python-tk
-  * apt install graphviz
-  * apt install python3-tk (for python3 support)
-  * Sometimes ImageTk errors are thrown in python3 env --> use apt install python3-pil python3-pil.imagetk
 * All these are included in the requirements.txt file
   * Scapy – rdpcap to read the packets from the pcap file 
   *	Ipwhois – to obtain whois information from ip
@@ -82,36 +68,21 @@ python Source/main.py
   *	Matplotlib – plot graph (not used as of now)
   
 ### Demo
-![Alt text](https://srinivas11789.github.io/PcapXray/Samples/demo2_6.gif?raw=true)
+![Alt text](?raw=true)
 
 ### Getting started:
 * Clone the repository
 * pip install -r requirements.txt
-* python Source/main.py
+* python manage.py runserver --noreload
 
 ### Additional Information:
 * Tested on Linux
 * Options for Traffic include - Web (HTTP and HTTPS), Tor, Malicious, ICMP, DNS
  
 ### Challenges:
-  * Unstability of the TK GUI:
-    * Decision on the GUI between Django and TK, settled upon tk for a simple local interface, but the unstability of the tk gui caused a number of problems
-  * Graph Plotting:
-    * Plotting a proper network graph which is readable from the data obtained was quite an effort, used different libraries to arrive at one.
   * Performance and Timing:
+    * The main challenged face was understanding the packet data and what each item meant. Once that is understood, the work becomes easier 
     * The performance and timing of the total application was a big challenge with different data gathering and output generation
-
-### Known Bugs:
-* Memory Hogging
-  * Sometimes memory hogging occurs when lower RAM is present in the system as the data stored in the memory from the pcap file is huge
-  * Should be Fixed by moving data into a database than the memory itself
-* Race Condition
-  * Due to mainloop of the TK gui, other threads could undergo a race condition
-  * Should be fixed by moving to a better structured TK implementation or Web GUI
-* Tk GUI Unstability:
-  * Same reason as above
-* Code:
-  * clumsy and unstructured code flow
 
 *	Current Fix in rare occasions: If any of the above issue occurs the progress bar keeps running and no output is generated, a restart of the app would be required.
 

@@ -11,7 +11,7 @@ from pyvis.network import Network
 import pprint
 
 from xray.libs.util_helpers import UtilHelpers
-from xray.models import Packet, Host
+from xray.models import Packet, Host, Default
 
 
 class PlotNetwork:
@@ -22,6 +22,9 @@ class PlotNetwork:
             os.makedirs(self.directory)
         options = option + "_" + to_ip.replace(".", "-") + "_" + from_ip.replace(".", "-")
         self.filename = os.path.join(self.directory, filename+"_"+options)
+
+        default = Default.objects.get(id=1)
+        self.show_unknown_protocol = default.show_unknown_protocols
 
         self.styles = {
             'graph': {
@@ -247,14 +250,18 @@ class PlotNetwork:
                             #     if edge_present == False:
                             #         edge_present = True
                             else:
-                                f.edge(curr_node, destination, label='UnknownProtocol/' + port + ': ' + str(map_dst),
-                                       color="brown")
-                                unknown += 1
-                                interactive_graph.add_edge(curr_node, destination, color="brown",
-                                                           title='UnknownProtocol/' + port + ': ' + str(map_dst),
-                                                           smooth={"type": "curvedCW", "roundness": unknown / 3})
-                                if edge_present == False:
-                                    edge_present = True
+                                pt = port
+
+                                if self.show_unknown_protocol is 1:
+                                    print('Adding unknown protocoals...')
+                                    f.edge(curr_node, destination, label='UnknownProtocol/' + port + ': ' + str(map_dst),
+                                           color="brown")
+                                    unknown += 1
+                                    interactive_graph.add_edge(curr_node, destination, color="brown",
+                                                               title='UnknownProtocol/' + port + ': ' + str(map_dst),
+                                                               smooth={"type": "curvedCW", "roundness": unknown / 3})
+                                    if edge_present == False:
+                                        edge_present = True
                     else:
                         # This block was just added to handle MAC SPOOF scenario
                         # * Most of the CTF Challenges have fake identical MACs that need to be displayed

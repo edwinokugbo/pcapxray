@@ -829,3 +829,15 @@ tr:hover {
 #mynetwork {
   width: 100% important;
 }
+
+@keyframes indicator {
+  from {background-color: #1094F4;}
+  to {background-color: black;}
+}
+
+#progress-indicator {
+  background-color: #1094F4;
+  animation-name: indicator;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

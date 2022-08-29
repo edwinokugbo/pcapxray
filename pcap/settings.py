@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s9tzf!t1reyu^^im(f)+u8k4-7o373og7l)f7e4-y17yfr#vx2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'theme',
     'django_browser_reload',
     'django_tables2',
+    'fontawesomefree',
 
     # Project Apps
     'xray',
@@ -128,7 +129,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'html', 'static')
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'html')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'html', 'media')

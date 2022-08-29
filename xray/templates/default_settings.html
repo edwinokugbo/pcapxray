@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="w-full h-full bg-slate-0 mb-48">
+    {% include 'nav.html' %}
+    <div class="w-full h-fit py-4 pl-8 pr-4 bg-slate-300 border-2 border-slate-300 flex flex-col lg1:flex-row justify-start items-start shadow-2xl"
+    >
+        <h3>Settings</h3>
+        <hr>
+        <form action="{% url 'xray:edit_defaults' %}" method="post" class="w-full">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <div class="w-full lg:w-1/2 my-2 active:border-slate-300 flex flex-col">
+                {{ form.output_dir.errors }}
+                <label
+                        for="{{ form.putput_dir.id_for_label }}"
+                        class="text-lg mb-2"
+                >Output Dir:
+                </label>
+                <span class="w-full">{{ form.output_dir }}</span>
+            </div>
+            <div class="my-2 active:border-slate-300 flex flex-col">
+                {{ form.show_unknown_protocols.errors }}
+                <label
+                        for="{{ form.show_unknown_protocols.id_for_label }}"
+                        class="text-lg font-bold mb-2"
+                >Show Unknown Protocols:
+                </label>
+                <span class="w-fit">{{ form.show_unknown_protocols }}</span>
+            </div>
+            <input type="submit" value="Save" class="w-auto bg-blue-600 text-white font-bold px-8 py-2 my-4 cursor-pointer"/>
+        </form>
+    </div>
+</div>
+{% endblock %}

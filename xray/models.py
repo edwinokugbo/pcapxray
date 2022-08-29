@@ -1,4 +1,7 @@
+import os
 from datetime import datetime
+
+from django.conf import settings
 from django.db import models
 import json
 
@@ -25,7 +28,7 @@ class Packet(models.Model):
     packet_length = models.IntegerField(null=True)
 
     def __str__(self):
-        return self.session_key + " : " + self.ethernet
+        return str(self.name) + " : " + str(self.ip_src) + " : " + str(self.ip_dst)
 
     def get_record(self):
         return self.objects.get()
@@ -46,26 +49,6 @@ class Packet(models.Model):
         src_list = set(Packet.objects.filter(name=name).values_list('ether_src', flat=True))
         dest_list = set(Packet.objects.filter(name=name).values_list('ether_dst', flat=True))
         return src_list, dest_list
-
-    # def src(self):
-    #     ether = json.loads(self.ethernet)
-    #     return ether['src']
-    #
-    # def dst(self):
-    #     ether = json.loads(self.ethernet)
-    #     return ether.get('dst')
-    #
-    # def ipsrc(self):
-    #     sk = self.session_key.split('/')
-    #     return sk[0]
-    #
-    # def ipdst(self):
-    #     sk = self.session_key.split('/')
-    #     return sk[1]
-    #
-    # def ipport(self):
-    #     sk = self.session_key.split('/')
-    #     return sk[2]
 
 
 class Network(models.Model):
@@ -106,7 +89,7 @@ class Pcap(models.Model):
     date_uploaded = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
     def check_pcap_loaded(self, name):
         found = Pcap.objects.filter(name=name).count()
@@ -119,4 +102,13 @@ class Pcap(models.Model):
 
     def delete_all(self, name):
         return Pcap.objects.filter(name=name).delete()
+
+
+class Default(models.Model):
+    output_dir = models.FilePathField(path=str(os.path.join(settings.BASE_DIR, 'static'),), allow_files=False, allow_folders=True, null=True, recursive=True)
+    show_unknown_protocols = models.IntegerField(default=0, choices=((0, 'No'), (1, 'Yes')))
+
+    def __str__(self):
+        return self.output_dir
+
 

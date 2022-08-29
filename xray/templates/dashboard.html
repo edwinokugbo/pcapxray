@@ -3,13 +3,7 @@
 {% load render_table from django_tables2 %}
 {% block content %}
 <div class="w-full h-full bg-slate-0 mb-48" xmlns:xray="http://www.w3.org/1999/xhtml">
-  <div class="w-ful flex justify-between py-2 px-4 bg-[#2C8DE7] text-white">
-    <h3>PcapXray 2.0</h3>
-    <div>
-      <a id="toggle-settings" href="#" title="Show Settings" class="text-lg text-white mr-2"><span class="fa fa-gear"></span></a>
-      <a href="/" class="text-lg text-white" title="Back to start"><span class="fa fa-home"></span></a>
-    </div>
-  </div>
+    {% include 'nav.html' %}
   <div
     class="w-full h-fit py-4 pl-8 pr-4 bg-slate-100 border-2 border-slate-300 flex flex-col lg:flex-row justify-start items-start lg:items-center shadow-2xl"
   >
@@ -32,7 +26,7 @@
           Analyse
         </button>
         <div class="flex items-center">
-          <input type="checkbox" name="recreate_table"  /> <label class="ml-2">Reload from file</label>
+          <input type="checkbox" name="recreate_table"  /> <span class="ml-2">Reload from file</span>
         </div>
       </div>
     </form>
@@ -41,43 +35,43 @@
       >
         <span
         id="hosts-table-butt"
-        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+        class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
       title="Hosts"
       >
-        <img src="{% static '/fontawesome/svgs/solid/cubes.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+        <i class="fa-solid fa-network-wired text-lg text-slate-600"></i>
       </span>
       <span
       id="packets-table-butt"
-        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+        class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
       title="Packets"
       >
-        <img src="{% static '/fontawesome/svgs/solid/network-wired.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+        <i class="fa-solid fa-box text-lg text-slate-600"></i>
       </span>
       <span
       id="packets-interactive-butt"
-        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
-      title="Interactiv eMagic"
+        class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
+      title="Interactive Magic"
       >
-        <img src="{% static '/fontawesome/svgs/solid/chart-gantt.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+        <i class="fa-solid fa-draw-polygon text-lg text-slate-600"></i>
       </span>
       <span
       id="packets-map-butt"
-        class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+        class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
       title="Visualize"
       >
-        <img src="{% static '/fontawesome/svgs/solid/eye.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+        <i class="fa-solid fa-diagram-project text-lg text-slate-600"></i>
       </span>
         <span
-          class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+          class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
           title="Zoom In"
         >
-          <img src="{% static '/fontawesome/svgs/solid/magnifying-glass-plus.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+          <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
         </span>
         <span
-          class="bg-slate-300 text-white border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm"
+          class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
           title="Zoom Out"
         >
-          <img src="{% static '/fontawesome/svgs/solid/magnifying-glass-minus.svg' %}" class="w-[20px] py-1 text-white cursor-pointer" />
+          <i class="fa-solid fa-magnifying-glass-minus text-lg text-slate-600"></i>
         </span>
       </div>
   </div>
@@ -94,7 +88,7 @@
     </div>
   </div>
   <div
-    class="w-full h-fit py-4 pl-8 pr-4 bg-slate-100 border-2 border-slate-100 flex flex-col md:flex-row justify-start md:justify-between items-start lg:items-center"
+    class="w-full h-fit py-4 pl-8 pr-4 bg-slate-100 border-2 border-slate-100 flex flex-col md:flex-row justify-start md:justify-between items-start lg:items-center hidden"
   >
     <div
       class="flex flex-col md:flex-row justify-start lg:justify-between items-start lg:items-center"
@@ -155,6 +149,11 @@
         {% include map_html %}
       {% endif %}
     </div>
+  </div>
+  <div id="progress-indicator" class="hidden fixed bottom-4 right-4 border-2 border-slate-500 rounded-full">
+  <div id="progress-indicator-inner" class="flex justify-center items-center w-[100px] h-[100px] bg-transparent">
+    <span class="text-white text-sm font-bold">In Progress...</span>
+  </div>
   </div>
 </div>
 {% endblock %}

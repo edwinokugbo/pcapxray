@@ -1,48 +1,25 @@
-{% load static %}
+<div class="w-ful flex justify-between py-2 px-4 bg-[#2C8DE7] text-white">
+    <h3>PcapXray 2.0</h3>
+    <div>
+      <a href="/" class="text-lg text-white mr-3" title="Back to start"><span class="fa fa-home"></span></a>
+      <a id="show-about" href="#" class="text-lg text-white mr-3" title="About PcapXray"><span class="fa fa-circle-info"></span></a>
+      <a href="{% url 'xray:edit_defaults' %}" title="Show Settings" class="text-lg text-white mr-2"><span class="fa fa-gear"></span></a>
+    </div>
+</div>
 
-<nav>
-  <div class="org">
-    <a id="nav-logo" href="/">
-      <img alt="logo" src={% static 'img/logo.png' %}>
-      <h2>FOSSFA.Africa</h2>
-    </a>
-    <button id="hamburger"></button>
+<div id="about-frame" class="w-screen h-screen bg-[rgb(59,130,246,0.2)] fixed left-0 top-0 hidden justify-center items-center">
+  <div class="bg-white border-2 border-slate-600 rounded-lg shadow-lg w-4/5 md:w-1/2 lg:w-1/4 p-4">
+    <h2>About PcapXray 2.0</h2>
+    <hr class="py-2">
+    <p>
+      Pcapxray is a simple but useful and powerful network detection tool that is still evolving into what may become a very important tool for network security<br><br>
+
+      Given a Pcap File, plot a network diagram displaying hosts in the network, network traffic, highlight important traffic and Tor traffic as well as potential malicious traffic including data involved in the communication.
+    </p>
+    <div class="flex justify-end">
+      <div id="close-about" class="w-fit bg-blue-500 text-white rounded-sm px-4 py-1 cursor-pointer">
+        Ok
+      </div>
+    </div>
   </div>
-  <div id="nav-menu">
-    <ul class="nav">
-      <li>
-        <a href="/about" class="nav-item">About</a>
-      </li>
-      <li>
-        <a href="/blog" class="nav-item">Blog</a>
-      </li>
-      <li>
-        <a href="/polls" class="nav-item">Polls</a>
-      </li>
-      <li>
-        <a href="/contact" class="nav-item">Contact</a>
-      </li>
-      {% if request.user.is_authenticated %}
-      <li>
-        <div id="nav-drop-menu-container">
-          <button id="dropbtn">
-            My Account
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div id="nav-drop-menu">
-            <a href="/home">Dashboard</a>
-            <a href="#">My profile</a>
-            <a href="/pages/logout">Logout <i class="fa fa-sign-out"></i></a>
-          </div>
-        </div>
-      </li>
-      {% else %}
-      <li>
-        <a href="/accounts/login" class="nav-item"
-          >Login <i class="fa fa-sign-in"></i
-        ></a>
-      </li>
-      {% endif %}
-    </ul>
-  </div>
-</nav>
+</div>

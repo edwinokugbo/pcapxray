@@ -13,7 +13,7 @@ from pyvis.network import Network
 
 class UtilHelpers:
     """ Class of utility helper functions for various stuff """
-    # def __init__(self):
+    # def __init__.py(self):
     #     self.filename
 
     def create_packets_details(*args):
@@ -144,6 +144,12 @@ class UtilHelpers:
                 pkt_len = pkt['IP'].len
 
                 summary = pkt.summary()
+
+
+                # try:
+                #     readable_payload = pkt.show()
+                #     payload = readable_payload
+                # except:
                 payload = pkt.summary()
 
                 temp_dict = {'pkt_time': pkt_time, 'ether_src': ether_src, 'ether_dst': ether_dst, 'ip_src': ip_src, 'ip_dst': ip_dst, 'src_port': src_port, 'dst_port': dst_port, 'ip_version': ip_version, 'protocol': protocol, 'pkt_len': pkt_len,  'summary': summary, 'payload': str(payload)}
@@ -231,7 +237,12 @@ class UtilHelpers:
         pcap_name = args[0].replace('.pcap', '')
 
         graph_packets = []
+        ii = 0
         for pkt in packets:
+            if pkt.src_port == 'NA':
+                ii = ii + 1
+                continue
+
             covert = False
             if pkt.covert != '':
                 covert = pkt.covert
@@ -252,25 +263,3 @@ class UtilHelpers:
             graph_packets.append(temp_packet)
 
         return graph_packets
-        # G = nx.Graph()
-        #
-        # tdict = {'a1': {'aa1': {'aaa101': {'information'}, 'aaa201': {'information'}},
-        #                 'aa2': {'cca101': {'information'}, 'aca201': {'information'}},
-        #                 'ab1': {'aasdfaa101': {'information'}, 'aadaa201': {'information'}}},
-        #          'a2': {'ab1': {'aasdfaa101': {'information'}, 'aadaa201': {'information'}},
-        #                 'ab2': {'zz101': {'information'}, 'azz201': {'information'}},
-        #                 'ac2': {'aaa101': {'information'}, 'aaa201': {'information'}}},
-        #          'a3': {'ac1': {'aaa101': {'information'}, 'aaa201': {'information'}},
-        #                 'ac2': {'aaa101': {'information'}, 'aaa201': {'information'}}}}
-        # self.create_graph(packets_dict, G)
-        # nx.draw(G, with_labels=True)
-        # plt.savefig(str(os.path.join(settings.BASE_DIR, 'static/report/'),) + pcap_name + '_plot.png')
-        #
-        # # G = nx.from_dict_of_dicts(packets_dict)
-        # # nx.draw(G)
-        # # pprint.pp(packets_dict)
-        # # pprint.pp(G)
-        # net = Network(height="600px", width="100vw", bgcolor="black", font_color="white")
-        # net.barnes_hut()
-        # net.from_nx(G)
-        # net.save_graph(str(os.path.join(settings.BASE_DIR, 'templates/report/'),) + pcap_name + '_plot.html')
