@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 {% load render_table from django_tables2 %}
 {% block content %}
@@ -25,8 +25,16 @@
         >
           Analyse
         </button>
-        <div class="flex items-center">
+        <div class="flex items-center border-2 border-slate-300 px-4 py-2">
           <input type="checkbox" name="recreate_table"  /> <span class="ml-2">Reload from file</span>
+        </div>
+        <div class="border-2 bg-slate-300 mx-4 pl-4 py-0">
+          <label class="mx-4">Filter by Port Type:</label>
+          <select name="filter_packet" value="{{ filter_packet }}">
+            {% for opt in filter_options %}
+                <option value="{{ opt }}" {% if opt == filter_packet %}selected{% endif %}>{{ opt }}</option>
+            {% endfor %}
+          </select>
         </div>
       </div>
     </form>
@@ -39,40 +47,49 @@
       title="Hosts"
       >
         <i class="fa-solid fa-network-wired text-lg text-slate-600"></i>
-      </span>
-      <span
-      id="packets-table-butt"
-        class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
-      title="Packets"
-      >
-        <i class="fa-solid fa-box text-lg text-slate-600"></i>
-      </span>
-      <span
-      id="packets-interactive-butt"
-        class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
-      title="Interactive Magic"
-      >
-        <i class="fa-solid fa-draw-polygon text-lg text-slate-600"></i>
-      </span>
-      <span
-      id="packets-map-butt"
-        class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
-      title="Visualize"
-      >
-        <i class="fa-solid fa-diagram-project text-lg text-slate-600"></i>
-      </span>
-        <span
-          class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
-          title="Zoom In"
-        >
-          <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
         </span>
         <span
+        id="packets-table-butt"
           class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
-          title="Zoom Out"
+        title="Packets"
         >
-          <i class="fa-solid fa-magnifying-glass-minus text-lg text-slate-600"></i>
+          <i class="fa-solid fa-box text-lg text-slate-600"></i>
         </span>
+        <span
+        id="packets-map-butt"
+          class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
+        title="Visualize"
+        >
+          <i class="fa-solid fa-diagram-project text-lg text-slate-600"></i>
+        </span>
+        <span
+        id="packets-interactive-butt"
+          class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
+        title="Interactive Magic"
+        >
+          <i class="fa-solid fa-draw-polygon text-lg text-slate-600"></i>
+        </span>
+        <span
+        id="packets-interactive-butt-two"
+          class="bg-blue-500 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"
+        title="Interactive Map 2.0"
+        >
+            <a href="/view_map/{{ selected_pcap }}/{{ filter_packet }}">
+              <i class="fa-solid fa-draw-polygon text-lg text-white"></i>
+            </a>
+        </span>
+<!--        <span-->
+<!--            class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"-->
+<!--            title="Zoom In"-->
+<!--          >-->
+<!--              <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>-->
+<!--        </span>-->
+<!--        <span-->
+<!--            class="bg-slate-300 border-2 border-slate-400 px-4 py-1 mr-4 rounded-sm cursor-pointer"-->
+<!--            title="Zoom Out"-->
+<!--          >-->
+<!--            <i class="fa-solid fa-magnifying-glass-minus text-lg text-slate-600"></i>-->
+<!--        </span>-->
       </div>
   </div>
   <div id="settings-box" style="display:none;" class="w-full">
@@ -105,7 +122,7 @@
           {% for source in sources %}
             {% if source != "" %}
               <option value="{{ source }}">{{  source }}</option>
-            {% endif %}          
+            {% endif %}
           {% endfor %}
         </select>
       </div>
@@ -116,7 +133,7 @@
           {% for dest in dests %}
             {% if dest != "" %}
               <option value="{{ dest }}">{{  dest }}</option>
-            {% endif %}          
+            {% endif %}
           {% endfor %}
         </select>
       </div>
@@ -141,13 +158,17 @@
     </div>
     <div id="packets-map" style="display:none;">
       <h2>Packets Map</h2>
-      <img id="packets-img" style="width:100%;height:auto;" src="{% static map_url %}" />
+      <img id="packets-img" style="width1:50%;height1:auto;" src="{% static map_url %}" class="w-full lg:w-1/2 mx-auto" />
     </div>
     <div id="packets-interactive" style="display:none;" class="w-[70%] p-4">
       <h2>Interactive Map</h2>
       {% if map_html is not None  %}
         {% include map_html %}
       {% endif %}
+    </div>
+    <div id="packets-interactive-two" style="display:none;" class="w-[70%] p-4">
+      <h2>Interactive Map 2.0</h2>
+      <div class="alchemy" id="alchemy"></div>
     </div>
   </div>
   <div id="progress-indicator" class="hidden fixed bottom-4 right-4 border-2 border-slate-500 rounded-full">

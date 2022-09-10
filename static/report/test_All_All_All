@@ -1,0 +1,191 @@
+digraph "network_diagram - All" {
+	graph [bgcolor=grey dpi=300 fontcolor=black fontsize=16 label=PcapGraph overlap=scale rankdir=LR size="10, 10"]
+	node [color=" black" fillcolor=yellow fixedsize=true fontcolor=black fontname=Helvetica height=3 shape=circle style=filled width=3]
+	node [shape=doublecircle]
+	node [shape=circle]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 104.20.31.2: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 54.230.51.182: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.12.163: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 72.21.81.48: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.10.142: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 52.4.44.43: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 151.101.20.249: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 23.52.167.9: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 52.85.95.152: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="DNS: 209.18.47.61" color=orange]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 173.194.68.104: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 69.147.82.60: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 151.101.22.2: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.10.131: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.12.174: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 172.217.10.131: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 216.58.218.238: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 54.86.254.88: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 151.101.22.110: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 151.101.20.84: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 34.198.48.183: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 35.165.225.32: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 34.226.113.143: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 54.200.150.117: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.10.227: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 216.58.219.229: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.10.238: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.12.165: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 216.58.219.238: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 54.230.51.182: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 212.121.132.78: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.10.237: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 172.217.10.46: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 216.58.219.225: " color=blue]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 23.43.56.210: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 172.217.12.170: " color=green]
+	"192.168.0.26
+78.4f.43.59.c1.6f"
+	"192.168.0.26
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 151.101.20.64: " color=green]
+}

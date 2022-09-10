@@ -1,0 +1,207 @@
+<html>
+{% load tailwind_tags %}
+<head>
+    {% load static %} {% tailwind_css %}
+    <link rel="stylesheet" href="http://127.0.0.1:8000/static/alchemy/alchemy.min.css" />
+    <link rel="stylesheet" href="http://127.0.0.1:8000/static/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dist/styles.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}" />
+
+    <style>
+                #alchemy {
+                    overflow: auto;
+                    background-color: #000000 !important;
+                }
+
+                svg {
+                    background-color: #000000 !important;
+                }
+            </style>
+
+</head>
+<body>
+  <div class="w-full flex justify-between py-2 px-4 bg-[#2C8DE7] text-white">
+      <a href="/"><h3>PcapXray 2.0</h3></a>
+      <div class="nav-right-report">
+        <a href="/" class="text-lg text-white mr-3" title="Back to start"><span class="fa fa-home"></span></a>
+        <a id="show-about" href="#" class="text-lg text-white mr-3" title="About PcapXray"><span class="fa fa-circle-info"></span></a>
+        <a href="{% url 'xray:edit_defaults' %}" title="Show Settings" class="text-lg text-white mr-2"><span class="fa fa-gear"></span></a>
+      </div>
+  </div>
+
+  <div id="about-frame" class="w-screen h-screen bg-[rgb(59,130,246,0.2)] fixed left-0 top-0 hidden justify-center items-center">
+    <div class="bg-white border-2 border-slate-600 rounded-lg shadow-lg w-4/5 md:w-1/2 lg:w-1/4 p-4">
+      <h2>About PcapXray 2.0</h2>
+      <hr class="py-2">
+      <p>
+        Pcapxray is a simple but useful and powerful network detection tool that is still evolving into what may become a very important tool for network security<br><br>
+
+        Given a Pcap File, plot a network diagram displaying hosts in the network, network traffic, highlight important traffic and Tor traffic as well as potential malicious traffic including data involved in the communication.
+      </p>
+      <div class="flex justify-end">
+        <div id="close-about" class="w-fit bg-blue-500 text-white rounded-sm px-4 py-1 cursor-pointer">
+          Ok
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alchemy" id="alchemy"></div>
+  <div class="map-report">
+    <div class="map-report-box">
+        <div id="close-map-report" class="w-full text-lg px-4 py-1 cursor-pointer flex justify-end">
+            <i class="fa fa-close red"></i>
+         </div>
+         <div id="map-report-note">
+         </div>
+     </div>
+  </div>
+
+  <div id="about-frame" class="w-screen h-screen bg-[rgb(59,130,246,0.2)] fixed left-0 top-0 hidden justify-center items-center">
+  <div class="bg-white border-2 border-slate-600 rounded-lg shadow-lg w-4/5 md:w-1/2 lg:w-1/4 p-4">
+    <h2>About PcapXray 2.0</h2>
+    <hr class="py-2">
+    <p>
+      Pcapxray is a simple but useful and powerful network detection tool that is still evolving into what may become a very important tool for network security<br><br>
+
+      Given a Pcap File, plot a network diagram displaying hosts in the network, network traffic, highlight important traffic and Tor traffic as well as potential malicious traffic including data involved in the communication.
+    </p>
+    <div class="flex justify-end">
+      <div id="close-about" class="w-fit bg-blue-500 text-white rounded-sm px-4 py-1 cursor-pointer">
+        Ok
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="http://127.0.0.1:8000/static/js/jquery.min.js"></script>
+  <script src="http://127.0.0.1:8000/static/alchemy/scripts/vendor.js"></script>
+  <script src="http://127.0.0.1:8000/static/alchemy/alchemy.min.js"></script>
+  <script type="text/javascript">
+
+    var pcapName = "ipv4frags.pcap"; 
+var json = { comment: "PCAP Capture traffic Map", nodes: [{ caption: "08:00:27:fc:6a:c9 - 2.1.1.2", nodeType: "node", id: 080027006009 },{ caption: "08:00:27:e2:9f:a6 - 2.1.1.1", nodeType: "node", id: 080027029006 }], edges: [{ source: 080027006009, target: 080027029006, edgeType: "ICMP" },{ source: 080027029006, target: 080027006009, edgeType: "ICMP" }]};
+
+    var config = {
+        dataSource: json,
+        edgeTypes: {"edgeType":["HTTP", "HTTPS", "DNS", "ICMP", "Tor", "Malicious", "SSH", "Unknown"]},
+        nodeTypes: {"nodeType":["node", "gateway"]},
+        forceLocked: false,
+        nodeCaption: 'caption',
+        edgeCaption: 'edgeType',
+        showControlDash: true,
+        zoomControls: true,
+        collisionDetection: false,
+        curvedEdges: true,
+        nodeStyle: {
+          "node": {
+            "color"      : "#F4D03F",
+            "radius"     : 15,
+            "borderWidth": 3,
+            "selected": {
+                "color" : "#f09c00",
+                "borderColor": "#349FE3",
+            },
+            "highlighted": {
+                "color" : "#CCCCCC",
+            },
+          },
+          "PossibleGateway": {
+            "color"      : "#67ed3e",
+            "radius"     : 30,
+            "borderWidth": 3,
+            "captionColor": "#FFFFFF",
+            "captionBackground": "#2630ed",
+            "captionSize": 12,
+            "selected": {
+                "color" : "#8fffba",
+                "borderColor": "#349FE3",
+            },
+            "highlighted": {
+                "color" : "#EEEEFF",
+            },
+            "hidden": {
+                "color": "none",
+                "borderColor": "none",
+            },
+          },
+        },
+        edgeStyle: {
+          "HTTP": {
+            "width": 5,
+            "color": "rgb(6,253,6)"
+          },
+          "HTTPS": {
+            "width": 5,
+            "color": "rgb(10,10,252)"
+          },
+          "DNS": {
+            "width": 12,
+            "color": "rgb(254,165,2)"
+          },
+          "ICMP": {
+            "width": 5,
+            "color": "rgb(240, 247, 104)"
+          },
+          "Tor": {
+            "width": 12,
+            "color": "rgb(255,255,255)"
+          },
+          "Malicious": {
+            "width": 5,
+            "color": "rgb(255,108,108 )"
+          },
+          "SSH": {
+            "width": 5,
+            "color": "rgb(255,108,108)"
+          },
+          "Unknown": {
+            "width": 5,
+            "color": "#ff00f3"
+          },
+        }
+    };
+
+    alchemy = new Alchemy(config);
+
+    $(document).on("dblclick", function(event){
+        var mapReport = $('.map-report');
+        mynode = event.target.textContent;
+        myid = event.target.id;
+        if (mynode != '' && myid != '') {
+            getMapReport(mynode);
+        }
+        console.log(mynode);
+    });
+
+    $("#close-map-report").on("click", function(event){
+        var mapReport = $('.map-report');
+        mapReport.hide();
+    });
+
+    function getMapReport(ip) {
+        var mapReport = $('.map-report');
+        var params = {
+          ipaddr: ip,
+          name: pcapName,
+        };
+        jQuery.ajax({
+          type: "GET",
+          url: "/get_map_report",
+          dataType: "JSON",
+          data: params,
+          success: function (res) {
+            console.log(res)
+            if (res) {
+              $("#map-report-note").html(res.html);
+              mapReport.css("display", "flex");
+            }
+          },
+          error: function (xhr) {
+            console.log(xhr);
+            $("#map-report-note").html(xhr);
+          },
+        });
+  }
+    </script>
+  </body>
+</html>

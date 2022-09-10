@@ -11,6 +11,7 @@ from pyvis.network import Network
 import pprint
 
 from xray.libs.util_helpers import UtilHelpers
+from xray.libs.tor_traffic_handle import TorTrafficHandle
 from xray.models import Packet, Host, Default
 
 
@@ -52,26 +53,28 @@ class PlotNetwork:
 
         # self.sessions = memory.packet_db.keys()
         util_helper = UtilHelpers()
-        graph_dict = util_helper.build_graph_packets(filename + '.pcap')
-        # self.packets = Packet.objects.all()[:50]
+        graph_dict, packets_keys = util_helper.build_graph_packets(filename + '.pcap')
+        # print(packets_keys)
         self.packets = graph_dict
 
-        # pp = pprint.PrettyPrinter(indent=4)
-        print('Print all packets...')
-        # pp.pprint(self.packets)
         # self.lan_hosts = Host.objects.all().values('src').distinct()
         self.lan_hosts = []
         # self.destination_hosts = Host.objects.all().values('dst').distinct()
-        self.destination_hosts = []
-        self.possible_tor_traffic = {}
+        # torT = tor_traffic_handle.torTrafficHandle().get_consensus_data()
+        # tor_traffic_data = tor_traffic_handle.TorTrafficHandle()
+        self.destination_hosts = {}
+        tor_traffic_data = TorTrafficHandle()
+        self.possible_tor_traffic = tor_traffic_data.tor_traffic_detection(filename + '.pcap')
 
-        #device_details_fetch.fetchDeviceDetails("ieee").fetch_info()
+        self.possible_mal_traffic = packets_keys
+
+        # device_details_fetch.fetchDeviceDetails("ieee").fetch_info()
         if option == "Malicious" or option == "All":
-            self.mal_identify = malicious_traffic_identifier.maliciousTrafficIdentifier()
+            print('Start Malicious...')
+            self.mal_identify = malicious_traffic_identifier.maliciousTrafficIdentifier(packets_keys)
         # if option == "Tor" or option == "All":
-        #     self.tor_identify = tor_traffic_handle.torTrafficHandle().tor_traffic_detection()
-        self.draw_graph(option, to_ip, from_ip)
-    
+        #     self.tor_identify = tor_traffic_handle.TorTrafficHandle().tor_traffic_detection()
+
     def apply_styles(self, graph, styles):
         graph.graph_attr.update(
             ('graph' in styles and styles['graph']) or {}
@@ -100,8 +103,8 @@ class PlotNetwork:
     def interactive_graph_node_add(self, interactive_graph, curr_node, destination):
         # Interactive Graph on Beta, so for now add safety checks ( potential failures in python2)
         try:
-            interactive_graph.add_node(str(curr_node), str(curr_node), title=str(curr_node), color="yellow")
-            interactive_graph.add_node(str(destination), str(destination), title=str(destination), color="yellow")
+            interactive_graph.add_node(str(curr_node), str(curr_node), title=str(curr_node), color="blue")
+            interactive_graph.add_node(str(destination), str(destination), title=str(destination), color="blue")
         except Exception as e:
             print("Interactive graph error occurred: "+str(e))
 
@@ -113,7 +116,7 @@ class PlotNetwork:
         else:
             f = Digraph('network_diagram - ' + option, filename=self.filename, engine="dot", format="png")
 
-        interactive_graph = Network(directed=True, height="900px", width="100vw", bgcolor="#222222", font_color="white")
+        interactive_graph = Network(directed=True, height="750px", width="100vw", bgcolor="#222222", font_color="white")
         interactive_graph.barnes_hut()
 
         f.attr('node', shape='doublecircle')
@@ -223,7 +226,7 @@ class PlotNetwork:
                                 if edge_present == False:
                                     edge_present = True
                             elif port == "ICMP":
-                                f.edge(curr_node, destination, label='ICMP: ' + str(map_dst), color="black")
+                                f.edge(curr_node, destination, label='ICMP: ' + str(map_dst), color="yellow")
                                 icmp += 1
                                 interactive_graph.add_edge(curr_node, destination, color="purple",
                                                            title='ICMP: ' + str(map_dst),
@@ -252,8 +255,8 @@ class PlotNetwork:
                             else:
                                 pt = port
 
-                                if self.show_unknown_protocol is 1:
-                                    print('Adding unknown protocoals...')
+                                if self.show_unknown_protocol == 1:
+                                    # print('Adding unknown protocoals...')
                                     f.edge(curr_node, destination, label='UnknownProtocol/' + port + ': ' + str(map_dst),
                                            color="brown")
                                     unknown += 1
@@ -546,7 +549,7 @@ class PlotNetwork:
                     self.interactive_graph_node_add(interactive_graph, curr_node, destination)
 
                     if protocol == "ICMP" and curr_node != destination:
-                        f.edge(curr_node, destination, label='ICMP: ' + str(map_dst), color="black")
+                        f.edge(curr_node, destination, label='ICMP: ' + str(map_dst), color="yellow")
                         icmp += 1
                         interactive_graph.add_edge(curr_node, destination, color="purple",
                                                    smooth={"type": "curvedCCW", "roundness": icmp / 10})

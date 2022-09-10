@@ -15,16 +15,17 @@ from xray.models import Packet
 
 class maliciousTrafficIdentifier:
 
-    def __init__(self):
+    def __init__(self, *args):
+        self.packet_keys = args[0]
         self.memory = {
             'session_keys': [],
             'possible_mal_traffic': [],
-            'destination_hosts': Packet.objects.all().values('ether_dst')[:10],
+            'destination_hosts': Packet.objects.all().values('ip_dst'),
             'signatures': {
                 'keys': []
             }
         }
-        for session in self.memory.session_keys:
+        for session in self.memory['session_keys']:
             src, dst, port = session.split("/")
             if port.isdigit() and self.malicious_traffic_detection(src, dst, int(port)) == 1:
                 self.memory.possible_mal_traffic.append(session)

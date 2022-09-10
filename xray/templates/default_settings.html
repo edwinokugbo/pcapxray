@@ -27,6 +27,33 @@
                 </label>
                 <span class="w-fit">{{ form.show_unknown_protocols }}</span>
             </div>
+            <div class="my-2 active:border-slate-300 flex flex-col">
+                {{ form.theme.errors }}
+                <label
+                        for="{{ form.theme.id_for_label }}"
+                        class="text-lg font-bold mb-2"
+                >App Theme:
+                </label>
+                <span class="w-fit">{{ form.theme }}</span>
+            </div>
+            <div class="my-2 active:border-slate-300 flex flex-col">
+                {{ form.skip_old_report.errors }}
+                <label
+                        for="{{ form.skip_old_report.id_for_label }}"
+                        class="text-lg font-bold mb-2"
+                >Skip Old Report:
+                </label>
+                <span class="w-fit">{{ form.skip_old_report }}</span>
+            </div>
+            <div class="my-2 active:border-slate-300 flex flex-col">
+                {{ form.edge_width.errors }}
+                <label
+                        for="{{ form.edge_width.id_for_label }}"
+                        class="text-lg font-bold mb-2"
+                >Edge Width:
+                </label>
+                <span class="w-fit">{{ form.edge_width }}</span>
+            </div>
             <input type="submit" value="Save" class="w-auto bg-blue-600 text-white font-bold px-8 py-2 my-4 cursor-pointer"/>
         </form>
     </div>

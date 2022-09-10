@@ -40,6 +40,10 @@ Tool Highlights:
 
 * Python 3
 
+* Unzip the files to a folder e.g. pcapxray
+* Or clone it from the github page
+8 navigate to the folder e.g. cd pcapxray
+
 ```bash
 apt install python3-pip
 Create a virtual environment with venv
@@ -47,8 +51,8 @@ Create a virtual environment with venv
     mkdir pcapenv
     python3 -m venv pcapenv
     source pcapenv/bin/activate         
-pip3 install -r requirements.txt
-python3 manage.py runserver --no-reload
+pip install -r requirements.txt
+python manage.py runserver --no-reload
 ```
 The above commands have also been saved in an executable file name pc in the project root directory.
 

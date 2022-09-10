@@ -6,3 +6,4 @@ from . import models
 admin.site.register(models.Packet)
 admin.site.register(models.Host)
 admin.site.register(models.Default)
+admin.site.register(models.Tor)

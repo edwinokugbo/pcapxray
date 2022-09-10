@@ -2,4 +2,4 @@
 # A script to automate the process of installing dependencies and running the pcap app
 source pcapenv/bin/activate
 pip install -r requirements.txt
-python manage.py runserver --noreload
+python manage.py runserver

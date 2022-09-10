@@ -1,0 +1,131 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100vw;
+            height: 750px;
+            background-color: #222222;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "blue", "font": {"color": "white"}, "id": "192.168.0.6\n78.4f.43.59.c1.6f", "label": "192.168.0.6\n78.4f.43.59.c1.6f", "shape": "dot", "title": "192.168.0.6\n78.4f.43.59.c1.6f"}, {"color": "blue", "font": {"color": "white"}, "id": "54.13.79.f3.66.d2\nPossibleGateway", "label": "54.13.79.f3.66.d2\nPossibleGateway", "shape": "dot", "title": "54.13.79.f3.66.d2\nPossibleGateway"}, {"color": "blue", "font": {"color": "white"}, "id": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "label": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "shape": "dot", "title": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.400d.c00..93\n54.13.79.f3.66.d2", "label": "2607.f8b0.400d.c00..93\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.400d.c00..93\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "78.4f.43.59.c1.6f\nPossibleGateway", "label": "78.4f.43.59.c1.6f\nPossibleGateway", "shape": "dot", "title": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.4006.819..200e\n54.13.79.f3.66.d2", "label": "2607.f8b0.4006.819..200e\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.4006.819..200e\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.4006.802..200e\n54.13.79.f3.66.d2", "label": "2607.f8b0.4006.802..200e\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.4006.802..200e\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.400d.c01..bc\n54.13.79.f3.66.d2", "label": "2607.f8b0.400d.c01..bc\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.400d.c01..bc\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.4006.811..200e\n54.13.79.f3.66.d2", "label": "2607.f8b0.4006.811..200e\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.4006.811..200e\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.4006.81b..200e\n54.13.79.f3.66.d2", "label": "2607.f8b0.4006.81b..200e\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.4006.81b..200e\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "192.168.0.17\ncc.af.78.67.20.e1", "label": "192.168.0.17\ncc.af.78.67.20.e1", "shape": "dot", "title": "192.168.0.17\ncc.af.78.67.20.e1"}, {"color": "blue", "font": {"color": "white"}, "id": "ff.ff.ff.ff.ff.ff\nPossibleGateway", "label": "ff.ff.ff.ff.ff.ff\nPossibleGateway", "shape": "dot", "title": "ff.ff.ff.ff.ff.ff\nPossibleGateway"}, {"color": "blue", "font": {"color": "white"}, "id": "192.168.0.5\n1c.1e.e3.9f.21.25", "label": "192.168.0.5\n1c.1e.e3.9f.21.25", "shape": "dot", "title": "192.168.0.5\n1c.1e.e3.9f.21.25"}, {"color": "blue", "font": {"color": "white"}, "id": "01.00.5e.7f.ff.fa\nPossibleGateway", "label": "01.00.5e.7f.ff.fa\nPossibleGateway", "shape": "dot", "title": "01.00.5e.7f.ff.fa\nPossibleGateway"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.4006.813..2002\n54.13.79.f3.66.d2", "label": "2607.f8b0.4006.813..2002\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.4006.813..2002\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.4006.811..200a\n54.13.79.f3.66.d2", "label": "2607.f8b0.4006.811..200a\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.4006.811..200a\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "2607.f8b0.4006.800..2008\n54.13.79.f3.66.d2", "label": "2607.f8b0.4006.800..2008\n54.13.79.f3.66.d2", "shape": "dot", "title": "2607.f8b0.4006.800..2008\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "fe80..10f1.ed74.a8bf.40e\n78.4f.43.59.c1.6f", "label": "fe80..10f1.ed74.a8bf.40e\n78.4f.43.59.c1.6f", "shape": "dot", "title": "fe80..10f1.ed74.a8bf.40e\n78.4f.43.59.c1.6f"}, {"color": "blue", "font": {"color": "white"}, "id": "33.33.00.01.00.02\nPossibleGateway", "label": "33.33.00.01.00.02\nPossibleGateway", "shape": "dot", "title": "33.33.00.01.00.02\nPossibleGateway"}, {"color": "blue", "font": {"color": "white"}, "id": "fe80..5613.79ff.fef3.66d2\n54.13.79.f3.66.d2", "label": "fe80..5613.79ff.fef3.66d2\n54.13.79.f3.66.d2", "shape": "dot", "title": "fe80..5613.79ff.fef3.66d2\n54.13.79.f3.66.d2"}, {"color": "blue", "font": {"color": "white"}, "id": "2a04.4e42.5..403\n54.13.79.f3.66.d2", "label": "2a04.4e42.5..403\n54.13.79.f3.66.d2", "shape": "dot", "title": "2a04.4e42.5..403\n54.13.79.f3.66.d2"}]);
+        edges = new vis.DataSet([{"arrows": "to", "color": "white", "from": "192.168.0.6\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.1111111111111111, "type": "curvedCW"}, "title": "TOR: 158.69.204.36", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.1, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.400d.c00..93: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.400d.c00..93\n54.13.79.f3.66.d2", "smooth": {"roundness": 0.3333333333333333, "type": "curvedCW"}, "title": "UnknownProtocol/65165: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.2, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.4006.819..200e: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "pink", "from": "192.168.0.6\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.2, "type": "curvedCW"}, "title": "DNS: 209.18.47.61", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.6\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.3, "type": "curvedCCW"}, "title": "HTTPS: 52.84.26.48: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.819..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 0.6666666666666666, "type": "curvedCW"}, "title": "UnknownProtocol/57692: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.4, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.4006.802..200e: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.802..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 1.0, "type": "curvedCW"}, "title": "UnknownProtocol/53552: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.3333333333333333, "type": "curvedCW"}, "title": "UnknownProtocol/5228: 2607.f8b0.400d.c01..bc", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.400d.c01..bc\n54.13.79.f3.66.d2", "smooth": {"roundness": 1.6666666666666667, "type": "curvedCW"}, "title": "UnknownProtocol/54410: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.5, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.4006.811..200e: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.6, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.4006.81b..200e: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.811..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 2.0, "type": "curvedCW"}, "title": "UnknownProtocol/50844: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.81b..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 2.3333333333333335, "type": "curvedCW"}, "title": "UnknownProtocol/60832: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.811..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 2.6666666666666665, "type": "curvedCW"}, "title": "UnknownProtocol/57421: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "192.168.0.17\ncc.af.78.67.20.e1", "smooth": {"roundness": 3.0, "type": "curvedCW"}, "title": "UnknownProtocol/1947: 255.255.255.255", "to": "ff.ff.ff.ff.ff.ff\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "192.168.0.17\ncc.af.78.67.20.e1", "smooth": {"roundness": 3.3333333333333335, "type": "curvedCW"}, "title": "UnknownProtocol/1947: 192.168.0.255", "to": "ff.ff.ff.ff.ff.ff\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "192.168.0.5\n1c.1e.e3.9f.21.25", "smooth": {"roundness": 3.6666666666666665, "type": "curvedCW"}, "title": "UnknownProtocol/1900: 239.255.255.250", "to": "01.00.5e.7f.ff.fa\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.7, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.4006.813..2002: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.813..2002\n54.13.79.f3.66.d2", "smooth": {"roundness": 4.0, "type": "curvedCW"}, "title": "UnknownProtocol/64234: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.8, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.4006.811..200a: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.811..200a\n54.13.79.f3.66.d2", "smooth": {"roundness": 4.333333333333333, "type": "curvedCW"}, "title": "UnknownProtocol/57874: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.811..200a\n54.13.79.f3.66.d2", "smooth": {"roundness": 4.666666666666667, "type": "curvedCW"}, "title": "UnknownProtocol/56320: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.9, "type": "curvedCCW"}, "title": "HTTPS: 2607.f8b0.4006.800..2008: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.802..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 5.0, "type": "curvedCW"}, "title": "UnknownProtocol/53312: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.800..2008\n54.13.79.f3.66.d2", "smooth": {"roundness": 5.333333333333333, "type": "curvedCW"}, "title": "UnknownProtocol/60944: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.6\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.0, "type": "curvedCCW"}, "title": "HTTPS: 23.207.195.114: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "fe80..10f1.ed74.a8bf.40e\n78.4f.43.59.c1.6f", "smooth": {"roundness": 5.666666666666667, "type": "curvedCW"}, "title": "UnknownProtocol/547: ff02..1.2", "to": "33.33.00.01.00.02\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "fe80..5613.79ff.fef3.66d2\n54.13.79.f3.66.d2", "smooth": {"roundness": 6.0, "type": "curvedCW"}, "title": "UnknownProtocol/546: fe80..10f1.ed74.a8bf.40e", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "pink", "from": "192.168.0.6\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.4, "type": "curvedCW"}, "title": "DNS: 209.18.47.62", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.08333333333333333, "type": "curvedCW"}, "title": "HTTP: 2a04.4e42.5..403: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "2604.2000.71d6.400.3cc2.834.5d8e.c6bd\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.1, "type": "curvedCCW"}, "title": "HTTPS: 2a04.4e42.5..403: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2a04.4e42.5..403\n54.13.79.f3.66.d2", "smooth": {"roundness": 6.333333333333333, "type": "curvedCW"}, "title": "UnknownProtocol/57878: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2a04.4e42.5..403\n54.13.79.f3.66.d2", "smooth": {"roundness": 6.666666666666667, "type": "curvedCW"}, "title": "UnknownProtocol/57877: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.811..200a\n54.13.79.f3.66.d2", "smooth": {"roundness": 7.0, "type": "curvedCW"}, "title": "UnknownProtocol/62948: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.802..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 7.333333333333333, "type": "curvedCW"}, "title": "UnknownProtocol/57883: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}, {"arrows": "to", "color": "brown", "from": "2607.f8b0.4006.802..200e\n54.13.79.f3.66.d2", "smooth": {"roundness": 7.666666666666667, "type": "curvedCW"}, "title": "UnknownProtocol/49521: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd", "to": "78.4f.43.59.c1.6f\nPossibleGateway"}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -80000,
+            "springConstant": 0.001,
+            "springLength": 250
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

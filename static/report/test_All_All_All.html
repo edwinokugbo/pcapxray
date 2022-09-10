@@ -1,0 +1,131 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100vw;
+            height: 750px;
+            background-color: #222222;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "blue", "font": {"color": "white"}, "id": "192.168.0.26\n78.4f.43.59.c1.6f", "label": "192.168.0.26\n78.4f.43.59.c1.6f", "shape": "dot", "title": "192.168.0.26\n78.4f.43.59.c1.6f"}, {"color": "blue", "font": {"color": "white"}, "id": "54.13.79.f3.66.d2\nPossibleGateway", "label": "54.13.79.f3.66.d2\nPossibleGateway", "shape": "dot", "title": "54.13.79.f3.66.d2\nPossibleGateway"}]);
+        edges = new vis.DataSet([{"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.08333333333333333, "type": "curvedCW"}, "title": "HTTP: 104.20.31.2: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.16666666666666666, "type": "curvedCW"}, "title": "HTTP: 54.230.51.182: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.1, "type": "curvedCCW"}, "title": "HTTPS: 172.217.12.163: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.25, "type": "curvedCW"}, "title": "HTTP: 72.21.81.48: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.2, "type": "curvedCCW"}, "title": "HTTPS: 172.217.10.142: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.3333333333333333, "type": "curvedCW"}, "title": "HTTP: 52.4.44.43: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.4166666666666667, "type": "curvedCW"}, "title": "HTTP: 151.101.20.249: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.5, "type": "curvedCW"}, "title": "HTTP: 23.52.167.9: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.5833333333333334, "type": "curvedCW"}, "title": "HTTP: 52.85.95.152: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "pink", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.2, "type": "curvedCW"}, "title": "DNS: 209.18.47.61", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.3, "type": "curvedCCW"}, "title": "HTTPS: 173.194.68.104: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.4, "type": "curvedCCW"}, "title": "HTTPS: 69.147.82.60: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.5, "type": "curvedCCW"}, "title": "HTTPS: 151.101.22.2: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.6, "type": "curvedCCW"}, "title": "HTTPS: 172.217.10.131: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.7, "type": "curvedCCW"}, "title": "HTTPS: 172.217.12.174: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.6666666666666666, "type": "curvedCW"}, "title": "HTTP: 172.217.10.131: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.8, "type": "curvedCCW"}, "title": "HTTPS: 216.58.218.238: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.9, "type": "curvedCCW"}, "title": "HTTPS: 54.86.254.88: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.0, "type": "curvedCCW"}, "title": "HTTPS: 151.101.22.110: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.1, "type": "curvedCCW"}, "title": "HTTPS: 151.101.20.84: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.2, "type": "curvedCCW"}, "title": "HTTPS: 34.198.48.183: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.75, "type": "curvedCW"}, "title": "HTTP: 35.165.225.32: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.8333333333333334, "type": "curvedCW"}, "title": "HTTP: 34.226.113.143: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 0.9166666666666666, "type": "curvedCW"}, "title": "HTTP: 54.200.150.117: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.3, "type": "curvedCCW"}, "title": "HTTPS: 172.217.10.227: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.4, "type": "curvedCCW"}, "title": "HTTPS: 216.58.219.229: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.5, "type": "curvedCCW"}, "title": "HTTPS: 172.217.10.238: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.6, "type": "curvedCCW"}, "title": "HTTPS: 172.217.12.165: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.7, "type": "curvedCCW"}, "title": "HTTPS: 216.58.219.238: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.8, "type": "curvedCCW"}, "title": "HTTPS: 54.230.51.182: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.0, "type": "curvedCW"}, "title": "HTTP: 212.121.132.78: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.9, "type": "curvedCCW"}, "title": "HTTPS: 172.217.10.237: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 2.0, "type": "curvedCCW"}, "title": "HTTPS: 172.217.10.46: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "blue", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 2.1, "type": "curvedCCW"}, "title": "HTTPS: 216.58.219.225: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.0833333333333333, "type": "curvedCW"}, "title": "HTTP: 23.43.56.210: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.1666666666666667, "type": "curvedCW"}, "title": "HTTP: 172.217.12.170: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}, {"arrows": "to", "color": "green", "from": "192.168.0.26\n78.4f.43.59.c1.6f", "smooth": {"roundness": 1.25, "type": "curvedCW"}, "title": "HTTP: 151.101.20.64: ", "to": "54.13.79.f3.66.d2\nPossibleGateway"}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -80000,
+            "springConstant": 0.001,
+            "springLength": 250
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

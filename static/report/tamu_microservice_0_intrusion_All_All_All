@@ -1,0 +1,1136 @@
+digraph "network_diagram - All" {
+	graph [bgcolor=grey dpi=300 fontcolor=black fontsize=16 label=PcapGraph overlap=scale rankdir=LR size="10, 10"]
+	node [color=" black" fillcolor=yellow fixedsize=true fontcolor=black fontname=Helvetica height=3 shape=circle style=filled width=3]
+	node [shape=doublecircle]
+	node [shape=circle]
+	"10.167.37.40
+02.42.0a.a7.25.28"
+	"10.167.37.40
+02.42.0a.a7.25.28" -> "08.00.27.19.7e.92
+PossibleGateway" [label="HTTP: 10.83.20.77: " color=green]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36662: 10.167.37.40" color=brown]
+	"10.164.141.62
+02.42.0a.a4.8d.3e"
+	"10.164.141.62
+02.42.0a.a4.8d.3e" -> "08.00.27.19.7e.92
+PossibleGateway" [label="HTTP: 10.83.20.77: " color=green]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55574: 10.164.141.62" color=brown]
+	"10.101.146.99
+02.42.0a.65.92.63"
+	"10.101.146.99
+02.42.0a.65.92.63" -> "08.00.27.19.7e.92
+PossibleGateway" [label="HTTP: 10.83.20.77: " color=green]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55880: 10.101.146.99" color=brown]
+	"10.157.105.58
+02.42.0a.9d.69.3a"
+	"10.157.105.58
+02.42.0a.9d.69.3a" -> "08.00.27.19.7e.92
+PossibleGateway" [label="HTTP: 10.83.20.77: " color=green]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34316: 10.157.105.58" color=brown]
+	"10.190.229.97
+02.42.0a.be.e5.61"
+	"10.190.229.97
+02.42.0a.be.e5.61" -> "08.00.27.19.7e.92
+PossibleGateway" [label="HTTP: 10.83.20.77: " color=green]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53660: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55886: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36674: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55586: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34326: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55590: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55896: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53674: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55900: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36688: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34338: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55602: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53684: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55606: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55608: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36700: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34350: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55918: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55920: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55618: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53700: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53702: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55928: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34364: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34366: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36720: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55936: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36724: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36726: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53718: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53720: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55642: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36734: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34384: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34386: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55954: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53732: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55654: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36746: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55962: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34398: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55966: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34402: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55666: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36758: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53750: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55976: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53754: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36766: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36768: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53760: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34420: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55988: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34424: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55688: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/55994: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53772: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55694: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34434: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56002: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34438: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36792: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53784: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56010: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34446: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36800: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55712: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55714: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53796: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36808: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36810: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36812: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56028: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56030: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56032: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34468: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36822: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56038: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55736: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53818: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.5b.09.5d
+PossibleGateway" [label="HTTPS: 10.91.9.93: " color=blue]
+	"10.91.9.93
+02.42.0a.5b.09.5d"
+	"10.91.9.93
+02.42.0a.5b.09.5d" -> "08.00.27.19.7e.92
+PossibleGateway" [label="UnknownProtocol/34124: 10.83.20.77" color=brown]
+	"10.91.9.93
+02.42.0a.5b.09.5d"
+	"10.91.9.93
+02.42.0a.5b.09.5d" -> "08.00.27.19.7e.92
+PossibleGateway" [label="UnknownProtocol/34126: 10.83.20.77" color=brown]
+	"10.91.9.93
+02.42.0a.5b.09.5d"
+	"10.91.9.93
+02.42.0a.5b.09.5d" -> "08.00.27.19.7e.92
+PossibleGateway" [label="UnknownProtocol/34128: 10.83.20.77" color=brown]
+	"10.91.9.93
+02.42.0a.5b.09.5d"
+	"10.91.9.93
+02.42.0a.5b.09.5d" -> "08.00.27.19.7e.92
+PossibleGateway" [label="UnknownProtocol/34130: 10.83.20.77" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55740: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56046: 10.101.146.99" color=brown]
+	"10.91.9.93
+02.42.0a.5b.09.5d"
+	"10.91.9.93
+02.42.0a.5b.09.5d" -> "08.00.27.19.7e.92
+PossibleGateway" [label="UnknownProtocol/22: 10.83.20.77" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.5b.09.5d
+PossibleGateway" [label="UnknownProtocol/41592: 10.91.9.93" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36836: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34486: 10.157.105.58" color=brown]
+	"10.91.9.93
+02.42.0a.5b.09.5d"
+	"10.91.9.93
+02.42.0a.5b.09.5d" -> "08.00.27.19.7e.92
+PossibleGateway" [label="UnknownProtocol/56980: 10.83.20.77" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36840: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36866: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55780: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55798: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53888: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36900: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36902: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34552: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56120: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55826: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36918: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53910: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55832: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53914: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34582: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55846: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56152: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53934: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55870: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56180: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36972: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53970: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55892: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34632: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55896: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56202: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53980: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/53982: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/36994: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34644: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55908: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34648: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34650: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55914: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56220: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37008: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54000: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34660: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34662: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55926: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56232: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37020: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54012: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54014: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55936: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56242: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54020: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34680: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55944: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37036: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55948: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37040: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54032: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56258: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34694: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55958: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56264: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37052: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54044: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34704: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55968: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37060: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56276: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55974: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54056: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55978: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55980: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55982: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34722: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56290: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54068: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34728: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37082: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34732: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56300: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/55998: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56304: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56306: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54084: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56006: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37098: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56314: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54092: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56014: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34754: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37108: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54100: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56326: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34762: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56026: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54108: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37120: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56032: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54114: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54116: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56342: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34778: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34780: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34782: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56046: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56352: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56354: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34790: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34792: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54136: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37148: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56060: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34800: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54144: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34804: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34806: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56374: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37162: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56074: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56380: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54158: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54160: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54164: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54166: 10.190.229.97" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34826: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.65.92.63
+PossibleGateway" [label="UnknownProtocol/56394: 10.101.146.99" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a7.25.28
+PossibleGateway" [label="UnknownProtocol/37182: 10.167.37.40" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.9d.69.3a
+PossibleGateway" [label="UnknownProtocol/34832: 10.157.105.58" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.a4.8d.3e
+PossibleGateway" [label="UnknownProtocol/56096: 10.164.141.62" color=brown]
+	"10.83.20.77
+08.00.27.19.7e.92"
+	"10.83.20.77
+08.00.27.19.7e.92" -> "02.42.0a.be.e5.61
+PossibleGateway" [label="UnknownProtocol/54178: 10.190.229.97" color=brown]
+}

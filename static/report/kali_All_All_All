@@ -1,0 +1,51 @@
+digraph "network_diagram - All" {
+	graph [bgcolor=grey dpi=300 fontcolor=black fontsize=16 label=PcapGraph overlap=scale rankdir=LR size="10, 10"]
+	node [color=" black" fillcolor=yellow fixedsize=true fontcolor=black fontname=Helvetica height=3 shape=circle style=filled width=3]
+	node [shape=doublecircle]
+	node [shape=circle]
+	"192.168.81.101
+00.50.56.99.70.db"
+	"192.168.81.101
+00.50.56.99.70.db" -> "00.50.56.99.21.3a
+PossibleGateway" [label="ICMP: 192.168.81.102" color=yellow]
+	"192.168.81.102
+00.50.56.99.21.3a"
+	"192.168.81.102
+00.50.56.99.21.3a" -> "00.50.56.99.70.db
+PossibleGateway" [label="ICMP: 192.168.81.101" color=yellow]
+	"192.168.81.100
+00.50.56.99.a1.f9"
+	"192.168.81.100
+00.50.56.99.a1.f9" -> "f4.b5.2f.4c.2d.41
+PossibleGateway" [label="DNS: 8.8.8.8" color=orange]
+	"192.168.81.100
+00.50.56.99.a1.f9"
+	"192.168.81.100
+00.50.56.99.a1.f9" -> "00.50.56.99.21.3a
+PossibleGateway" [label="UnknownProtocol/8000: 192.168.81.102" color=brown]
+	"192.168.81.102
+00.50.56.99.21.3a"
+	"192.168.81.102
+00.50.56.99.21.3a" -> "00.50.56.99.a1.f9
+PossibleGateway" [label="UnknownProtocol/48136: 192.168.81.100" color=brown]
+	"192.168.81.100
+00.50.56.99.a1.f9"
+	"192.168.81.100
+00.50.56.99.a1.f9" -> "00.50.56.99.70.db
+PossibleGateway" [label="HTTP: 192.168.81.101: " color=green]
+	"192.168.81.101
+00.50.56.99.70.db"
+	"192.168.81.101
+00.50.56.99.70.db" -> "00.50.56.99.a1.f9
+PossibleGateway" [label="UnknownProtocol/45580: 192.168.81.100" color=brown]
+	"192.168.81.102
+00.50.56.99.21.3a"
+	"192.168.81.102
+00.50.56.99.21.3a" -> "00.50.56.99.cd.f4
+PossibleGateway" [label="UnknownProtocol/22: 192.168.81.104" color=brown]
+	"192.168.81.104
+00.50.56.99.cd.f4"
+	"192.168.81.104
+00.50.56.99.cd.f4" -> "00.50.56.99.21.3a
+PossibleGateway" [label="UnknownProtocol/53426: 192.168.81.102" color=brown]
+}

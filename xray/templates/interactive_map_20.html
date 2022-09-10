@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block content %}
+    <style type="text/css">
+        #mynetwork {
+            width: 100%;
+            height: 100vh;
+            background: {{ theme.bg_color }};
+            border: 1px solid lightgray;
+        }
+    </style>
+{% include 'nav.html' %}
+<div id="mynetwork"></div>
+<div class="map-report">
+<div class="map-report-box">
+    <div id="close-map-report" class="w-full text-lg px-4 py-1 cursor-pointer flex justify-end">
+        <i class="fa fa-close red"></i>
+     </div>
+     <div id="map-report-note">
+     </div>
+ </div>
+</div>
+<input type="hidden" id="selected_pcap" value="{{ selected_pcap }}" />
+
+<script type="text/javascript">
+$(document).ready(function() {   //same as: $(function() {
+         // create an array with nodes
+    var nodes = new vis.DataSet({{ nodes | safe }});
+
+    // create an array with edges
+    var edges = new vis.DataSet({{ edges | safe }});
+
+    // create a network
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    var options = {
+    };
+
+    // initialize your network!
+    var network = new vis.Network(container, data, options);
+
+    network.on( 'doubleClick', function(properties) {
+        var ids = properties.nodes;
+        var clickedNodes = nodes.get(ids);
+        var ip = clickedNodes[0].key
+
+        if (ip != '') {
+            getMapReport(ip);
+        }
+        //console.log('clicked nodes:', clickedNodes[0].id);
+        // console.log('clicked nodes:', clickedNodes[0].label);
+        //console.log('clicked nodes:', clickedNodes[0].key);
+    });
+
+    $("#close-map-report").on("click", function(event){
+        var mapReport = $('.map-report');
+        mapReport.hide();
+    });
+
+    function getMapReport(ip) {
+        var mapReport = $('.map-report');
+        var pcapName = 'kali.pcap';
+        var params = {
+          ipaddr: ip,
+          name: $('#selected_pcap').val(),
+        };
+        jQuery.ajax({
+          type: "GET",
+          url: "/get_map_report",
+          dataType: "JSON",
+          data: params,
+          success: function (res) {
+            console.log(res)
+            if (res) {
+              $("#map-report-note").html(res.html);
+              mapReport.css("display", "flex");
+            }
+          },
+          error: function (xhr) {
+            console.log(xhr);
+            $("#map-report-note").html(xhr);
+          },
+        });
+    }
+
+});
+</script>
+{% endblock %}

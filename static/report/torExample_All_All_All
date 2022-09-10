@@ -1,0 +1,196 @@
+digraph "network_diagram - All" {
+	graph [bgcolor=grey dpi=300 fontcolor=black fontsize=16 label=PcapGraph overlap=scale rankdir=LR size="10, 10"]
+	node [color=" black" fillcolor=yellow fixedsize=true fontcolor=black fontname=Helvetica height=3 shape=circle style=filled width=3]
+	node [shape=doublecircle]
+	node [shape=circle]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="TOR: 158.69.204.36" color=white]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.400d.c00..93: " color=blue]
+	"2607.f8b0.400d.c00..93
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c00..93
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/65165: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.4006.819..200e: " color=blue]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="DNS: 209.18.47.61" color=orange]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 52.84.26.48: " color=blue]
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.819..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/57692: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.4006.802..200e: " color=blue]
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/53552: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="UnknownProtocol/5228: 2607.f8b0.400d.c01..bc" color=brown]
+	"2607.f8b0.400d.c01..bc
+54.13.79.f3.66.d2"
+	"2607.f8b0.400d.c01..bc
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/54410: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.4006.811..200e: " color=blue]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.4006.81b..200e: " color=blue]
+	"2607.f8b0.4006.811..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.811..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/50844: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.81b..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.81b..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/60832: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.811..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.811..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/57421: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"192.168.0.17
+cc.af.78.67.20.e1"
+	"192.168.0.17
+cc.af.78.67.20.e1" -> "ff.ff.ff.ff.ff.ff
+PossibleGateway" [label="UnknownProtocol/1947: 255.255.255.255" color=brown]
+	"192.168.0.17
+cc.af.78.67.20.e1"
+	"192.168.0.17
+cc.af.78.67.20.e1" -> "ff.ff.ff.ff.ff.ff
+PossibleGateway" [label="UnknownProtocol/1947: 192.168.0.255" color=brown]
+	"192.168.0.5
+1c.1e.e3.9f.21.25"
+	"192.168.0.5
+1c.1e.e3.9f.21.25" -> "01.00.5e.7f.ff.fa
+PossibleGateway" [label="UnknownProtocol/1900: 239.255.255.250" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.4006.813..2002: " color=blue]
+	"2607.f8b0.4006.813..2002
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.813..2002
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/64234: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.4006.811..200a: " color=blue]
+	"2607.f8b0.4006.811..200a
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.811..200a
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/57874: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.811..200a
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.811..200a
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/56320: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2607.f8b0.4006.800..2008: " color=blue]
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/53312: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.800..2008
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.800..2008
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/60944: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 23.207.195.114: " color=blue]
+	"fe80..10f1.ed74.a8bf.40e
+78.4f.43.59.c1.6f"
+	"fe80..10f1.ed74.a8bf.40e
+78.4f.43.59.c1.6f" -> "33.33.00.01.00.02
+PossibleGateway" [label="UnknownProtocol/547: ff02..1.2" color=brown]
+	"fe80..5613.79ff.fef3.66d2
+54.13.79.f3.66.d2"
+	"fe80..5613.79ff.fef3.66d2
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/546: fe80..10f1.ed74.a8bf.40e" color=brown]
+	"192.168.0.6
+78.4f.43.59.c1.6f"
+	"192.168.0.6
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="DNS: 209.18.47.62" color=orange]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTP: 2a04.4e42.5..403: " color=green]
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f"
+	"2604.2000.71d6.400.3cc2.834.5d8e.c6bd
+78.4f.43.59.c1.6f" -> "54.13.79.f3.66.d2
+PossibleGateway" [label="HTTPS: 2a04.4e42.5..403: " color=blue]
+	"2a04.4e42.5..403
+54.13.79.f3.66.d2"
+	"2a04.4e42.5..403
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/57878: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2a04.4e42.5..403
+54.13.79.f3.66.d2"
+	"2a04.4e42.5..403
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/57877: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.811..200a
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.811..200a
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/62948: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/57883: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2"
+	"2607.f8b0.4006.802..200e
+54.13.79.f3.66.d2" -> "78.4f.43.59.c1.6f
+PossibleGateway" [label="UnknownProtocol/49521: 2604.2000.71d6.400.3cc2.834.5d8e.c6bd" color=brown]
+}

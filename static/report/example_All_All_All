@@ -1,0 +1,1341 @@
+digraph "network_diagram - All" {
+	graph [bgcolor=grey dpi=300 fontcolor=black fontsize=16 label=PcapGraph overlap=scale rankdir=LR size="10, 10"]
+	node [color=" black" fillcolor=yellow fixedsize=true fontcolor=black fontname=Helvetica height=3 shape=circle style=filled width=3]
+	node [shape=doublecircle]
+	node [shape=circle]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/60056: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/8000: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/46624: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53788: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53790: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/51683: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53792: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'" -> "102.132.101.60
+PossibleGateway" [label="HTTPS: 102.132.101.60: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53794: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.123
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "192.168.6.123
+PossibleGateway" [label="HTTPS: 50.19.93.182: " color=blue]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'" -> "151.101.62.114
+PossibleGateway" [label="HTTPS: 151.101.62.114: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53796: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53798: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7h\x00'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7h\x00'" -> "192.168.6.206
+PossibleGateway" [label="DNS: 192.168.6.206" color=orange]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/34722: 192.168.6.123" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'" -> "34.122.121.32
+PossibleGateway" [label="HTTP: 34.122.121.32: " color=green]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7 \"'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7 \"'" -> "13.227.219.64
+PossibleGateway" [label="HTTPS: 13.227.219.64: " color=blue]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00}'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00}'" -> "74.125.133.188
+PossibleGateway" [label="HTTPS: 74.125.133.188: " color=blue]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7}\n'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7}\n'" -> "239.255.255.250
+PossibleGateway" [label="UnknownProtocol/1900: 239.255.255.250" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53802: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00T\x93'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00T\x93'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53804: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'" -> "104.18.23.52
+PossibleGateway" [label="HTTPS: 104.18.23.52: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'" -> "127.0.0.53
+PossibleGateway" [label="DNS: 127.0.0.53" color=orange]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w=S'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w=S'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/37461: 192.168.6.123" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/55329: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'" -> "35.180.36.235
+PossibleGateway" [label="HTTPS: 35.180.36.235: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53810: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53812: 127.0.0.1" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/48669: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\xbb\x93'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\xbb\x93'" -> "216.58.223.196
+PossibleGateway" [label="HTTPS: 216.58.223.196: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53814: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53816: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00*\x9e'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00*\x9e'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53818: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53820: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/60142: 127.0.0.1" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/33243: 127.0.0.1" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/49319: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7\x00\x00'" -> "104.18.22.52
+PossibleGateway" [label="HTTPS: 104.18.22.52: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53826: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53828: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53830: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53832: 127.0.0.1" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/59144: 192.168.6.123" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\xc6\x87'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\xc6\x87'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/46451: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7m\xb9'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7m\xb9'" -> "216.58.223.238
+PossibleGateway" [label="HTTPS: 216.58.223.238: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/60154: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53836: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00/*'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00/*'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53838: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00U\xc7'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00U\xc7'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53840: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53842: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53844: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xc0\x13'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xc0\x13'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53846: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00t'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00t'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53848: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00X\x8b'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00X\x8b'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53850: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53852: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00i\xf9'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00i\xf9'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53854: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x004'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x004'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/60176: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53858: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53860: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\n\xd7'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\n\xd7'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53862: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xfd\x88'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xfd\x88'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53864: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53866: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53868: 127.0.0.1" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/46870: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00Ow'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00Ow'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53870: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53872: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x008\xbb'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x008\xbb'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53874: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x06'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x06'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53876: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa8\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa8\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53878: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xaa\x9b'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xaa\x9b'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53880: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53882: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00G;'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00G;'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53884: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53886: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53888: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53890: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53892: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x9c\x87'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x9c\x87'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53894: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xce\xa7'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xce\xa7'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53896: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa8\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa8\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53898: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53900: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53902: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53904: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53906: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x9c\x87'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x9c\x87'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53908: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00F;'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00F;'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53910: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa8\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa8\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53912: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x03\x04'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x03\x04'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53914: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53916: 127.0.0.1" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/52436: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53918: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x14R'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x14R'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53920: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53922: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x12\x85'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x12\x85'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53924: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc\xef'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc\xef'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53926: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xd3%'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xd3%'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53928: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00F;'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00F;'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53930: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53932: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53934: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf8\x1c'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53936: 127.0.0.1" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89wL\x9f'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89wL\x9f'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/51568: 192.168.6.123" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00e\x04'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00e\x04'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/36082: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53940: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x06'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x06'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53942: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53944: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00F;'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00F;'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53946: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x06'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x06'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53948: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53950: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53952: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdd\xbb'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdd\xbb'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53954: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x001e'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x001e'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53956: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xc3\xb6'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xc3\xb6'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53958: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdd\xbb'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdd\xbb'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53960: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53962: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=\xb8'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53964: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53966: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00}\xc3'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00}\xc3'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53968: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53970: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53972: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53974: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xbb\xe1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xbb\xe1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53976: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdf\xdb'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdf\xdb'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53978: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00N '"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00N '" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53980: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53982: 127.0.0.1" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x90\xfe'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x90\xfe'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/49058: 192.168.6.123" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/38037: 192.168.6.123" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54563: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53984: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53986: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x01\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x01\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53988: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa3\\'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa3\\'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53990: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53992: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00AG'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00AG'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53994: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xbb\xe1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xbb\xe1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53996: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/53998: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54000: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54002: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54004: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54006: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54008: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xce\xa7'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xce\xa7'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54010: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54012: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54014: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54016: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54018: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54020: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89w'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89w'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54022: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00}\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00}\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54024: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa6\xb4'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa6\xb4'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54026: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89w'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89w'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54028: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54030: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x12a'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x12a'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54032: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54034: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54036: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54038: 127.0.0.1" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "224.0.0.251
+PossibleGateway" [label="UnknownProtocol/5353: 224.0.0.251" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf5P'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xf5P'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54040: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54042: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xef\xd1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54044: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54046: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54048: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x1cd'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x1cd'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54050: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x0c\xc2'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x0c\xc2'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54052: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00{8'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00{8'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54054: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7}\n'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7}\n'" -> "35.232.111.17
+PossibleGateway" [label="HTTP: 35.232.111.17: " color=green]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x8bA'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x8bA'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54058: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc^'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc^'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54060: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54062: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54064: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54066: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54068: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54070: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00{\"'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00{\"'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54072: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54074: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdbi'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdbi'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54076: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00.\xb3'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00.\xb3'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54078: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54080: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54082: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54084: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xeb\x82'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xeb\x82'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54086: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xcc?'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xcc?'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54088: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89a'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89a'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54090: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x10\x9d'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x10\x9d'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54092: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00}'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00}'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54094: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00%\xa3'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00%\xa3'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54096: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54098: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54100: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54102: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54104: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54106: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54108: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89a'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x89a'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54110: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54112: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x01'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x01'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54114: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54116: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54118: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54120: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00%\xa1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00%\xa1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54122: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54124: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00{\"'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00{\"'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54126: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54128: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xb3l'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xb3l'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54130: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54132: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54134: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54136: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54138: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54140: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00%\xa1'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00%\xa1'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54142: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54144: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x10\x95'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x10\x95'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54146: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00nI'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00nI'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54148: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x04\x06'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54150: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc\x0c'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc\x0c'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54152: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00<'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00<'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54154: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54156: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54158: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54160: 127.0.0.1" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/37831: 192.168.6.123" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/40961: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00J\x98'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00J\x98'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54162: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54164: 127.0.0.1" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/35547: 192.168.6.123" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/40161: 127.0.0.1" color=brown]
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7i\x1d'"
+	"192.168.6.123
+b'\x8e\xbb\x80=\xce\xa7i\x1d'" -> "13.227.219.15
+PossibleGateway" [label="HTTPS: 13.227.219.15: " color=blue]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xbb\xa6'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xbb\xa6'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54168: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54170: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54172: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc\x0c'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdc\x0c'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54174: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54176: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00 \x9f'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00 \x9f'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54178: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00h\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00h\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54180: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x01\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x01\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54182: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54184: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00W\xd4'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00W\xd4'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54186: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xc4f'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xc4f'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54188: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54190: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54192: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54194: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00 \x9f'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00 \x9f'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54196: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54198: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x0e\x93'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x0e\x93'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54200: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00TN'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00TN'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54202: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54204: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54206: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54208: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\x95'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\x95'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54210: 127.0.0.1" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x08\n'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x08\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/51515: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa1\x9f'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xa1\x9f'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54212: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54214: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=w'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00=w'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54216: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54218: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xff\xd7'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xff\xd7'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54220: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54222: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x83\xcc'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x83\xcc'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54224: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54226: 127.0.0.1" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w \"'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w \"'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/34806: 192.168.6.123" color=brown]
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'"
+	"192.168.6.206
+b'\x9a-\xf6\x17\x89w\x00\x00'" -> "192.168.6.123
+PossibleGateway" [label="UnknownProtocol/56378: 192.168.6.123" color=brown]
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.53
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/43044: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54228: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00<'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00<'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54230: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54232: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xff\xd7'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xff\xd7'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54234: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00TN'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00TN'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54236: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xdb\xbc'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54238: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xff\xd7'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\xff\xd7'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54240: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x00\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54242: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00}\n'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00}\n'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54244: 127.0.0.1" color=brown]
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'"
+	"127.0.0.1
+b'\x00\x00\x00\x00\x00\x00\x08\x00'" -> "127.0.0.1
+PossibleGateway" [label="UnknownProtocol/54246: 127.0.0.1" color=brown]
+}
